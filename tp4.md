@@ -1,3 +1,9 @@
+---
+title: "TP 4 : Capteur de lumière"
+nav_order: 6
+schema: true
+---
+
 # TP 4 : Capteur de lumière
 
 {: .objectiv }

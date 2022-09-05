@@ -1,3 +1,9 @@
+---
+title: "TP 3 : LED externe"
+nav_order: 5
+schema: true
+---
+
 # TP 3 : LED externe
 
 {: .objectiv }

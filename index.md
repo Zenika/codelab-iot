@@ -1,4 +1,10 @@
-# ⌨️ Codelab IOT
+---
+title: Accueil
+nav_order: 1
+schema: true
+---
+
+# Accueil
 
 Découvrir la programmation sur ESP en créant un objet connecté.
 
@@ -24,12 +30,7 @@ Découvrir la programmation sur ESP en créant un objet connecté.
 - [TP 3 : Branchement d'une LED](tp3.md)
 - [TP 4 : Capteur de lumière](tp4.md)
 
-## 🩺 Aide
-
-- [Aide au diagnostique](troubleshooting.md)
-- [🔎 Identification et caractéristiques de chaque composant](composants.md)
-
 ## 📚 Documentation
 
-- [arduino esp8266](https://arduino-esp8266.readthedocs.io/en/latest/index.html)
+- [Arduino esp8266](https://arduino-esp8266.readthedocs.io/en/latest/index.html)
 - [Wifi sur esp8266](https://siytek.com/wemos-d1-mini-arduino-wifi/)

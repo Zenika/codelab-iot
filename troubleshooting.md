@@ -1,3 +1,9 @@
+---
+title: 🩺 Troubleshooting
+nav_order: 20
+schema: true
+---
+
 # 🩺 Troubleshooting
 
 ## Vérification du fonctionnement de la LED

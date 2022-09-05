@@ -1,3 +1,9 @@
+---
+title: "TP 2 : Installation de l'IDE"
+nav_order: 4
+schema: true
+---
+
 # TP 2 : Installation de l'IDE & Blink World
 
 {: .objectiv }

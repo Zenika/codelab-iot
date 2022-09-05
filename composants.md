@@ -1,3 +1,9 @@
+---
+title: 🔎 Composants
+nav_order: 21
+schema: true
+---
+
 # 🔎 Identification et caractéristiques de chaque composant
 
 ## WeMos D1 mini

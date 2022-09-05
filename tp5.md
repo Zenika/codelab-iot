@@ -1,3 +1,9 @@
+---
+title: "TP 5 : LED + LDR"
+nav_order: 7
+schema: true
+---
+
 # TP 5 : Allumer la LED en fonction de la luminosité
 
 {: .objectiv }

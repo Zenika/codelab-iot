@@ -1,3 +1,9 @@
+---
+title: Installations de l'IDE
+nav_order: 2
+schema: true
+---
+
 # Installations de l'IDE
 
 {: .tip }
