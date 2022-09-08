@@ -26,7 +26,7 @@ Voici le câblage correspondant :
 
 L'API à utiliser pour mesurer la tension est [`analogRead()`](https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/). Pour la communication série, il faut utiliser [`Serial`](https://www.arduino.cc/reference/en/language/functions/communication/serial/) et notamment `Serial.begin()` et `Serial.println()`.
 
-Une attente de quelques millisecondes peut être ajoutée en fin de boucle pour éviter de flooder la console via l'instruction [`delay()`](https://www.arduino.cc/reference/en/language/functions/time/delay/).
+Une attente de 100 millisecondes peut être ajoutée en fin de boucle pour éviter de flooder la console via l'instruction [`delay()`](https://www.arduino.cc/reference/en/language/functions/time/delay/).
 
 TODO mettre en spoiler le code
 ```c
@@ -40,7 +40,7 @@ void loop() {
   double ldr = analogRead(A0);
   Serial.print(String("valeur : "));
   Serial.println(ldr);
-  delay(50);
+  delay(100);
 }
 ```
 
