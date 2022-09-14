@@ -44,5 +44,7 @@ void loop() {
 }
 ```
 
+TODO screenshots du moniteur série ou du traceur série (menu Tools)
+
 ----
 [⬅️ TP 3](tp3.md) :: [TP 5 ➡️](tp5.md)
