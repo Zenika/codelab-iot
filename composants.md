@@ -28,8 +28,7 @@ Explications : [magpi.raspberrypi.com](https://magpi.raspberrypi.com/articles/br
 
 ![Pinout](resources/led-pinout.jpg)
 
-Patte la plus longue = Anode (+)
-Patte la plus courte = Cathode (-)
+Patte la plus longue = Anode (+) / Patte la plus courte = Cathode (-)
 
 Le méplat est toujours du côté Cathode (-)
 
