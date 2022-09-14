@@ -14,4 +14,8 @@ Le montage suivant permet d'allumer de manière continue la LED sans écrire un 
 
 ## Erreur d'upload
 
-En cas d'erreur d'upload, il faut re-essayer. Si le problème persiste, appuyer sur le bouton `RESET` situé en haut à droite du port USB.
+En cas d'erreur d'upload, il faut re-essayer.
+
+Vérifier également que le cable USB de l'ESP8266 est bien connecté à l'ordinateur ! ;)
+
+Si le problème persiste, appuyer sur le bouton `RESET` situé en haut à droite du port USB.
