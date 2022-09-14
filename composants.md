@@ -28,6 +28,11 @@ Explications : [magpi.raspberrypi.com](https://magpi.raspberrypi.com/articles/br
 
 ![Pinout](resources/led-pinout.jpg)
 
+Patte la plus longue = Anode (+)
+Patte la plus courte = Cathode (-)
+
+Le méplat est toujours du côté Cathode (-)
+
 Explications : [circuits-diy](https://www.circuits-diy.com/how-to-blink-led-using-an-arduino/)
 
 ## LDR
