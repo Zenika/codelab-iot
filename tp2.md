@@ -1,10 +1,10 @@
 ---
-title: "TP 2 : Installation de l'IDE"
+title: "TP 2 : Utilisation de l'IDE"
 nav_order: 4
 schema: true
 ---
 
-# TP 2 : Installation de l'IDE & Blink World
+# TP 2 : Utilisation de l'IDE & Blink World
 
 {: .objectiv }
 Configuration de l'environnement Arduino IDE et écrire un _sketch_ pour faire clignoter la led interne.
