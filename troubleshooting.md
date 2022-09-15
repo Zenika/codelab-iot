@@ -22,4 +22,4 @@ Si le problème persiste, appuyer sur le bouton `RESET` situé en haut à droite
 
 ## Pas d'affichage sur le moniteur série
 
-Bien vérifier que les valeurs `Serial.begin(9600)` et la valeur choisie dans la liste déroulante en bas à droite de celui-ci correspondent
+Bien vérifier que les valeurs `Serial.begin(9600)` et celle choisie dans la liste déroulante en bas à droite du moniteur correspondent
