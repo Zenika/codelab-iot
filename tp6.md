@@ -16,35 +16,7 @@ Il n'est pas nécessaire de modifier le câblage des composants.
 
 Ne pas oublier de configurer la vitesse de communication de la console série en adéquation avec l'instruction `Serial.begin(115200);`.
 
-TODO mettre en spoiler le code
-```c
-#include <ESP8266WiFi.h>
-
-void setup()
-{
-  Serial.begin(115200);
-  Serial.println();
-
-  WiFi.begin("network-name", "pass-to-network");
-
-  Serial.print("Connecting");
-  while (WiFi.status() != WL_CONNECTED)
-  {
-    delay(500);
-    Serial.print(".");
-  }
-  Serial.println();
-
-  Serial.print("Connected, IP address: ");
-  Serial.println(WiFi.localIP());
-}
-
-void loop() {}
-```
-
-Exemple de sortie console :
-
-![console-tp6](resources/tp6-console.jpg)
+[{{ site.code-spoiler }}](tp6_code.md)
 
 ----
 [⬅️ TP 5](tp5.md) :: [TP 7 ➡️](tp7.md)

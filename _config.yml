@@ -90,3 +90,6 @@ callouts:
   objectiv:
     title: Objectif
     color: purple
+
+code-spoiler: 🎁 Code réponse ici
+endpoint: http://mockbin.org/bin/6d834105-ea2c-47f5-a794-5a5c01775ee2

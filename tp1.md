@@ -15,7 +15,7 @@ Pour se familiariser avec le code "à la Arduino", nous allons débuter avec un 
 
 Voici [une documentation détaillée](https://docs.arduino.cc/learn/programming/sketches) sur la structure de ce sketch. Les fonctions [`pinMode()`](https://www.arduino.cc/reference/en/language/functions/digital-io/pinmode/) et [`digitalWrite()`](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/) sont utilisées respectivement pour configurer le sens entrée/sortie de la broche et pour mettre `0` (état bas ou `LOW`) ou `5 V` (état  haut ou `HIGH`) sur cette broche.
 
-Voici le code utilisé dans le TP commenté afin de mieux comprendre :
+Voici le code utilisé dans le TP commenté :
 ```c
 #define LED 18 // définition d'une constante nommée LED valant 18, un rechercher/remplacer sera effectué par le pre-processeur au moment de la compilation.
 

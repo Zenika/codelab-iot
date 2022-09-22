@@ -22,29 +22,9 @@ Voici le câblage correspondant :
 
 ![montage-tp5](resources/tp5-montage.jpg)
 
-Coté code, les instructions de contrôle d'exécution habituel sont disponibles : `if`, `then`, `else`...
+Coté code, les instructions de contrôle d'exécution habituelles sont disponibles : `if`, `then`, `else`...
 
-TODO mettre en spoiler le code
-```c
-void setup() {
-  Serial.begin(9600);
-  Serial.flush();
-  pinMode(A0, INPUT);
-  pinMode(D1, OUTPUT);
-}
-
-void loop() {
-  double ldr = analogRead(A0);
-  Serial.print(String("valeur : "));
-  Serial.println(ldr);
-  if (ldr < 25) {  // 25 dépend de la luminosité ambiante, à ajuster en fonction des valeurs lues avec et sans ombre
-    digitalWrite(D1, HIGH);
-  } else {
-    digitalWrite(D1, LOW);
-  }
-  delay(100);
-}
-```
+[{{ site.code-spoiler }}](tp5_code.md)
 
 ----
 [⬅️ TP 4](tp4.md) :: [TP 6 ➡️](tp6.md)

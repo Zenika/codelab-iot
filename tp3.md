@@ -21,24 +21,12 @@ Voici le câblage correspondant :
 
 ![montage-tp3](resources/tp3-montage.jpg)
 
-Reprendre le sketch du TP2 pour utiliser la sortie `D1` au lieu de `LED_BUILTIN` :
-
-TODO mettre en spoiler le code
-```c
-void setup() {
-  pinMode(D1, OUTPUT);
-}
-
-void loop() {
-  digitalWrite(D1, HIGH);
-  delay(1000);
-  digitalWrite(D1, LOW);
-  delay(500);
-}
-```
+Reprendre le sketch du TP2 pour utiliser la sortie `D1` au lieu de `LED_BUILTIN`.
 
 {: .tip }
 Si la LED ne clignote pas, commencer par tester en l'inversant, elle ne grillera pas ;-) (tout de suite)
+
+[{{ site.code-spoiler }}](tp3_code.md)
 
 ----
 [⬅️ TP 2](tp2.md) :: [TP 4 ➡️](tp4.md)

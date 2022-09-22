@@ -53,21 +53,7 @@ L'attente de 100 millisecondes ajoutée en fin de boucle via l'instruction [`del
 
 L'API à utiliser pour mesurer la tension aux bornes de la photo-résistance est [`analogRead()`](https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/).
 
-TODO mettre en spoiler le code
-```c
-void setup() {
-  Serial.begin(9600);
-  Serial.flush();
-  pinMode(A0, INPUT);
-}
-
-void loop() {
-  double ldr = analogRead(A0);
-  Serial.print("valeur : ");
-  Serial.println(ldr);
-  delay(100);
-}
-```
+[{{ site.code-spoiler }}](tp4_code.md)
 
 ----
 [⬅️ TP 3](tp3.md) :: [TP 5 ➡️](tp5.md)
