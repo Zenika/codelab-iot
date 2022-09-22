@@ -12,7 +12,7 @@ Brancher le capteur de lumière et afficher sa valeur sur la console série.
 {: .warning }
 ⚠️ Avant toutes manipulations de composants, il faut **débrancher** le câble USB.
 
-La [LDR](https://en.wikipedia.org/wiki/Photoresistor), ou photo-résistance, est une resistance dont la valeur varie en fonction de la lumière : plus il fait sombre, plus sa résistance est élevée (> 1MΩ), moins il y a de courant qui passe, plus la tension aux bornes du composant est élevée.
+La résistance de la [LDR](https://en.wikipedia.org/wiki/Photoresistor) varie en fonction de la lumière : plus il fait sombre, plus sa résistance est élevée (> 1MΩ), moins il y a de courant qui passe, plus la tension aux bornes du composant est élevée.
 
 Nous utiliserons un pont diviseur de tension afin de lire la tension aux bornes de la résistance via la broche `A0` de l'ESP et envoyer la valeur lue sur la console série.
 
