@@ -16,7 +16,7 @@ La résistance de la [LDR](https://en.wikipedia.org/wiki/Photoresistor) varie en
 
 Nous utiliserons un pont diviseur de tension afin de lire la tension aux bornes de la résistance via la broche `A0` de l'ESP et envoyer la valeur lue sur la console série.
 
-Le schema électronique est le suivant :
+Le schéma électronique est le suivant :
 
 ![schema-tp4](resources/tp4-schema.jpg)
 
