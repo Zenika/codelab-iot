@@ -51,8 +51,8 @@ Ce composant n'est pas polarisé, c'est à dire qu'il n'y a pas de broche positi
 Mnémonic pour se rappeler des couleurs :
 ```
 Ne Mangez Rien Ou Jeunez, Voila Bien Votre Grande Bêtise
-⚫   🟤     🔴  🟠   🟡    🟣    🔵    🟢   🔘     ⚪
-1    2     3   4    5     6    7     8    9     0
+⚫   🟤    🔴  🟠   🟡     🟣    🔵    🟢   🔘     ⚪
+1     2     3   4    5      6     7     8    9      0
 ```
 
 Voir [ce site pour le calcul des valeurs de résistances](https://www.electronique-radioamateur.fr/elec/composants/resistance-code-couleurs.php).

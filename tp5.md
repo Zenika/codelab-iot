@@ -12,7 +12,7 @@ Allumer la LED si une ombre est détectée.
 {: .warning }
 ⚠️ Avant toutes manipulations de composants, il faut **débrancher** le câble USB.
 
-Le schema électronique est un mélange des 2 TPs précédents :
+Le schéma électronique est un mélange des 2 TPs précédents :
   - la LED + résistance sur le port `D1`
   - pont de résistances sur `A0`
 

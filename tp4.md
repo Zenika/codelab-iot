@@ -16,7 +16,7 @@ La résistance de la [LDR](https://en.wikipedia.org/wiki/Photoresistor) varie en
 
 Nous utiliserons un pont diviseur de tension afin de lire la tension aux bornes de la résistance via la broche `A0` de l'ESP et envoyer la valeur lue sur la console série.
 
-Le schema électronique est le suivant :
+Le schéma électronique est le suivant :
 
 ![schema-tp4](resources/tp4-schema.jpg)
 
@@ -26,7 +26,7 @@ Voici le câblage correspondant :
 
 Pour la communication série, il faut utiliser [`Serial`](https://www.arduino.cc/reference/en/language/functions/communication/serial/) :
   - `Serial.begin()` permettant de configurer la vitesse de communication dans la fonction `setup()`
-  - `Serial.print()` et `Serial.println()` pour afficher des infos où voulu dans le code.
+  - `Serial.print()` et `Serial.println()` pour afficher des infos depuis l'emplacement voulu dans le code.
 
 Exemple :
 ```c
