@@ -13,7 +13,7 @@ Câbler une LED et la faire clignoter
 ⚠️ Avant toutes manipulations de composants, il faut **débrancher** le câble USB.
 
 Une LED se branche toujours avec une résistance en série pour la protéger, ici, nous utilisons une valeur de 220 Ω (ohms). Celle ci est branchée sur la broche `D1`.
-Le schema électronique pour faire brancher la led est le suivant :
+Le schema électronique pour brancher la led est le suivant :
 
 ![schema-tp3](resources/tp3-schema.jpg)
 
