@@ -26,7 +26,7 @@ Voici le câblage correspondant :
 
 Pour la communication série, il faut utiliser [`Serial`](https://www.arduino.cc/reference/en/language/functions/communication/serial/) :
   - `Serial.begin()` permettant de configurer la vitesse de communication dans la fonction `setup()`
-  - `Serial.print()` et `Serial.println()` pour afficher des infos où voulu dans le code.
+  - `Serial.print()` et `Serial.println()` pour afficher des infos depuis l'emplacement voulu dans le code.
 
 Exemple :
 ```c
