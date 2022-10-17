@@ -12,7 +12,7 @@ Brancher le capteur de lumière et afficher sa valeur sur la console série.
 {: .warning }
 ⚠️ Avant toutes manipulations de composants, il faut **débrancher** le câble USB.
 
-La résistance de la [LDR](https://en.wikipedia.org/wiki/Photoresistor) varie en fonction de la lumière : plus il fait sombre, plus sa résistance est élevée (> 1MΩ), moins il y a de courant qui passe, plus la tension aux bornes du composant est élevée.
+La résistance de la [LDR](https://en.wikipedia.org/wiki/Photoresistor){:target="_blank"} varie en fonction de la lumière : plus il fait sombre, plus sa résistance est élevée (> 1MΩ), moins il y a de courant qui passe, plus la tension aux bornes du composant est élevée.
 
 Nous utiliserons un pont diviseur de tension afin de lire la tension aux bornes de la résistance via la broche `A0` de l'ESP et envoyer la valeur lue sur la console série.
 
@@ -24,7 +24,7 @@ Voici le câblage correspondant :
 
 ![montage-tp4](resources/tp4-montage.jpg)
 
-Pour la communication série, il faut utiliser [`Serial`](https://www.arduino.cc/reference/en/language/functions/communication/serial/) :
+Pour la communication série, il faut utiliser [`Serial`](https://www.arduino.cc/reference/en/language/functions/communication/serial/){:target="_blank"} :
   - `Serial.begin()` permettant de configurer la vitesse de communication dans la fonction `setup()`
   - `Serial.print()` et `Serial.println()` pour afficher des infos depuis l'emplacement voulu dans le code.
 
@@ -49,9 +49,9 @@ Dans la console qui vient de s'ouvrir, sélectionner la vitesse dans le menu dé
 ![console](resources/tp4-serial.jpg)
 
 {: .tip }
-L'attente de 100 millisecondes ajoutée en fin de boucle via l'instruction [`delay()`](https://www.arduino.cc/reference/en/language/functions/time/delay/) évite de flooder la console.
+L'attente de 100 millisecondes ajoutée en fin de boucle via l'instruction [`delay()`](https://www.arduino.cc/reference/en/language/functions/time/delay/){:target="_blank"} évite de flooder la console.
 
-L'API à utiliser pour mesurer la tension aux bornes de la photo-résistance est [`analogRead()`](https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/).
+L'API à utiliser pour mesurer la tension aux bornes de la photo-résistance est [`analogRead()`](https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/){:target="_blank"}.
 
 [{{ site.code-spoiler }}](tp4_code.md)
 

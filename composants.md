@@ -26,7 +26,7 @@ La connection entre les différents trous est par colonne et par ligne. Sur le d
 
 ![Breadboard wiring](resources/breadboard-wiring.jpg)
 
-Explications : [magpi.raspberrypi.com](https://magpi.raspberrypi.com/articles/breadboard-tutorial), [learn.adafruit.com](https://learn.adafruit.com/breadboards-for-beginners)
+Explications : [magpi.raspberrypi.com](https://magpi.raspberrypi.com/articles/breadboard-tutorial){:target="_blank"}, [learn.adafruit.com](https://learn.adafruit.com/breadboards-for-beginners){:target="_blank"}
 
 ## LED
 
@@ -36,11 +36,11 @@ Patte la plus longue = Anode (+) / Patte la plus courte = Cathode (-)
 
 Le méplat est toujours du côté Cathode (-)
 
-Explications : [circuits-diy](https://www.circuits-diy.com/how-to-blink-led-using-an-arduino/)
+Explications : [circuits-diy](https://www.circuits-diy.com/how-to-blink-led-using-an-arduino/){:target="_blank"}
 
 ## LDR
 
-La [LDR](https://en.wikipedia.org/wiki/Photoresistor), ou photo-résistance, est une resistance dont la valeur varie en fonction de la lumière : plus il fait sombre, plus sa résistance est élevée (> 1MΩ), moins il y a de courant qui passe, plus la tension aux bornes du composant est élevée.
+La [LDR](https://en.wikipedia.org/wiki/Photoresistor){:target="_blank"}, ou photo-résistance, est une resistance dont la valeur varie en fonction de la lumière : plus il fait sombre, plus sa résistance est élevée (> 1MΩ), moins il y a de courant qui passe, plus la tension aux bornes du composant est élevée.
 Ce composant n'est pas polarisé, c'est à dire qu'il n'y a pas de broche positive (+) et moins (-).
 
 ![LCD / photorésistance](resources/photoresistor.jpg)
@@ -55,12 +55,12 @@ Ne Mangez Rien Ou Jeunez, Voila Bien Votre Grande Bêtise
 1     2     3   4    5      6     7     8    9      0
 ```
 
-Voir [ce site pour le calcul des valeurs de résistances](https://www.electronique-radioamateur.fr/elec/composants/resistance-code-couleurs.php).
+Voir [ce site pour le calcul des valeurs de résistances](https://www.electronique-radioamateur.fr/elec/composants/resistance-code-couleurs.php){:target="_blank"}.
 
 ![resistance](resources/resistors.jpg)
 
 ----
-Sources : [microcontrollerslab](https://microcontrollerslab.com), [element14](https://element14.com), [raspberrypi](https://magpi.raspberrypi.com), [circuits-diy](https://www.circuits-diy.com)
+Sources : [microcontrollerslab](https://microcontrollerslab.com){:target="_blank"}, [element14](https://element14.com){:target="_blank"}, [raspberrypi](https://magpi.raspberrypi.com){:target="_blank"}, [circuits-diy](https://www.circuits-diy.com){:target="_blank"}
 
 ----
 [⬅️  Accueil](README.md) :: [Pré-requis ➡️](pre-requis.md)

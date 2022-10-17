@@ -32,5 +32,5 @@ Découvrir la programmation sur ESP en créant un objet connecté.
 
 ## 📚 Documentation
 
-- [Arduino esp8266](https://arduino-esp8266.readthedocs.io/en/latest/index.html)
-- [Wifi sur esp8266](https://siytek.com/wemos-d1-mini-arduino-wifi/)
+- [Arduino esp8266](https://arduino-esp8266.readthedocs.io/en/latest/index.html){:target="_blank"}
+- [Wifi sur esp8266](https://siytek.com/wemos-d1-mini-arduino-wifi/){:target="_blank"}
