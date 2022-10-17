@@ -12,7 +12,7 @@ Configuration de l'environnement Arduino IDE et écrire un _sketch_ pour faire c
 1. Dans Arduino IDE, aller dans le menu _Tools_ > _Board: .*_ >, sélectionner _ESP8266 Boards_ > _LOLIN(WEMOS) D1 R2 & mini_
  ![select](resources/arduino-ide-board-select.jpg)
 2. Connecter l'ESP avec le câble USB
-3. Sélectionner le port de communication via le menu _Tools_ > _Port_ > `/dev/cu*` sous GNU Linux ou macOS, `COM` sous windows
+3. Sélectionner le port de communication via le menu _Tools_ > _Port_ > `/dev/cu.usbserial-*` sous GNU Linux ou macOS, `COM` sous windows
  ![port](resources/arduino-ide-board-port.jpg)
 4. Créer un premier sketch faisant clignoter la led intégrée en utilisant un snippet de code existant : aller dans _File_ > _Examples_ > _ESP8266_ > _Blink_. Le _sketch_ est le même que dans le TP précédent.
 ![port](resources/tp2-blink.jpg)

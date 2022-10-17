@@ -29,6 +29,9 @@ Découvrir la programmation sur ESP en créant un objet connecté.
 - [TP 2 : Installation de l'IDE & Blink World](tp2.md)
 - [TP 3 : Branchement d'une LED](tp3.md)
 - [TP 4 : Capteur de lumière](tp4.md)
+- [TP 5 : LED + LDR](tp5.md)
+- [TP 6 : Wifi](tp6.md)
+- [TP 7 : Endpoint](tp7.md)
 
 ## 📚 Documentation
 
