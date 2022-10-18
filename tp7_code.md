@@ -50,7 +50,7 @@ void loop() {
     HTTPClient http;
 
     Serial.print("[HTTP] begin...\n");
-    if (http.begin(client, "{{ site.endpoint }}")) {
+    if (http.begin(client, "{{ site.endpoint.http }}")) {
 
 
       Serial.print("[HTTP] GET...\n");
@@ -113,8 +113,9 @@ Exemple provenant de _File_ > _Examples_ > _ESP8266HTTPClient_ > _BasicHTTPSClie
 #include <ESP8266HTTPClient.h>
 
 #include <WiFiClientSecureBearSSL.h>
-// Fingerprint for demo URL, expires on June 2, 2021, needs to be updated well before this date
-const uint8_t fingerprint[20] = {0x40, 0xaf, 0x00, 0x6b, 0xec, 0x90, 0x22, 0x41, 0x8e, 0xa3, 0xad, 0xfa, 0x1a, 0xe8, 0x25, 0x41, 0x1d, 0x1a, 0x54, 0xb3};
+// Here we replace the finger print by the SHA-1 sign of the mockbin web server certificate
+// Use the char* attended fingerprint type since it's more convinient to copy and past the sha-1 signature from the browser
+const char* fingerprint = "72:25:52:2D:BE:73:13:61:77:AE:26:5D:D3:16:B8:56:37:BE:FD:E3";
 
 ESP8266WiFiMulti WiFiMulti;
 
@@ -145,12 +146,12 @@ void loop() {
 
     client->setFingerprint(fingerprint);
     // Or, if you happy to ignore the SSL certificate, then use the following line instead:
-    client->setInsecure();
+    // client->setInsecure();
 
     HTTPClient https;
 
     Serial.print("[HTTPS] begin...\n");
-    if (https.begin(*client, "{{ site.endpoint }}")) {  // HTTPS
+    if (https.begin(*client, "{{ site.endpoint.https }}")) {  // HTTPS
 
       Serial.print("[HTTPS] GET...\n");
       // start connection and send HTTP header
