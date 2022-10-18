@@ -194,5 +194,4 @@ Hello devfest
 Wait 10s before next round...
 ```
 
-Dans l'exemple ci dessus, vous aurez remarqué la magnifique ligne : `client->setInsecure();` qui autorise des appels sans vérification de certificats 😱.
-L'exemple de sketch _File_ > _Examples_ > _ESP8266HTTPClient_ > _HTTPSRequest_ met en oeuvre une vérification de la chaine de certificat.
+Dans l'exemple ci-dessus, vous aurez remarqué qu'il est bien sûr possible de ne pas vérifier les certificats SSL avec `client->setInsecure();` 😱.
