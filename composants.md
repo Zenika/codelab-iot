@@ -48,9 +48,11 @@ Ce composant n'est pas polarisé, c'est à dire qu'il n'y a pas de broche positi
 
 ## Résistance
 
+Norme du code des couleurs : [CEI_60757](https://fr.wikipedia.org/wiki/CEI_60757)
+
 Mnémonic pour se rappeler des couleurs :
 ```
-Ne Mangez Rien Ou Jeunez, Voila Bien Votre Grande Bêtise
+Ne Manger Rien Ou Jeûner, Voilà Bien Votre Grande Bêtise
 ⚫   🟤    🔴  🟠   🟡     🟣    🔵    🟢   🔘     ⚪
 1     2     3   4    5      6     7     8    9      0
 ```
