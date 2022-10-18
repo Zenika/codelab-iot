@@ -14,7 +14,7 @@ Appeler un endpoint en HTTP sur [Mockbin.org](https://mockbin.org/){:target="_bl
 ![historique](resources/tp7-historique.jpg)
 
 ## Appel en HTTP
-Parcourir les exemples disponibles dans l'IDE sous _File_ > _Examples_ > _ESP8266HTTPClient_ pour implémenter un sketch appelant l'url [{{ site.endpoint.http }}]({{ site.endpoint.http }}){:target="_blank"} en GET.
+Parcourir les exemples disponibles dans l'IDE sous _File_ > _Examples_ > _ESP8266HTTPClient_ pour implémenter un sketch appelant l'url [{{ site.endpoint }}]({{ site.endpoint }}){:target="_blank"} en GET.
 
 [{{ site.code-spoiler }}](tp7_code.md#appel-en-http)
 
