@@ -21,4 +21,4 @@ schema: true
 7. Terminer en cliquant sur le bouton _close_
 
 ----
-[⬅️ Composants](composants.md) :: [TP 1 ➡️ ](tp1.md)
+[TP 1 ➡️ ](tp1.md)

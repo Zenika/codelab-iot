@@ -63,6 +63,3 @@ Voir [ce site pour le calcul des valeurs de résistances](https://www.electroniq
 
 ----
 Sources : [microcontrollerslab](https://microcontrollerslab.com){:target="_blank"}, [element14](https://element14.com){:target="_blank"}, [raspberrypi](https://magpi.raspberrypi.com){:target="_blank"}, [circuits-diy](https://www.circuits-diy.com){:target="_blank"}
-
-----
-[⬅️  Accueil](README.md) :: [Pré-requis ➡️](pre-requis.md)
