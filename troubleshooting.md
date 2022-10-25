@@ -22,7 +22,7 @@ Vérifier également que le cable USB de l'ESP8266 est bien connecté à l'ordin
 
 Si le problème persiste, appuyer sur le bouton `RESET` situé en haut à droite du port USB.
 
-Voir également cet article : https://support.arduino.cc/hc/en-us/articles/4407830972050-Find-and-stop-process-blocking-a-port
+Voir également cet article : [Arduino - Déterminer qui bloque un port](https://support.arduino.cc/hc/en-us/articles/4407830972050-Find-and-stop-process-blocking-a-port)
 
 ## `Permission denied` sous Linux
 
@@ -34,7 +34,7 @@ Si ce n'est pas le cas, ajouter le user courant :
 ```
 sudo usermod -a -G dialout $USER
 ```
-cf : https://support.arduino.cc/hc/en-us/articles/360016495679-Fix-port-access-on-Linux
+cf : [Arduino - Ajustements des droits sous Linux](https://support.arduino.cc/hc/en-us/articles/360016495679-Fix-port-access-on-Linux)
 
 - Sur les distributions Ubuntu récente, le programme `brltty` bloque le port série et empêche l'upload ==> Le désinstaller via la commande : `sudo apt remove -y brltty`.
 
