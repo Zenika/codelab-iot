@@ -33,3 +33,5 @@ Le schéma électronique reprend celui du TP précédent avec 2 LEDs en plus :
 Voici le câblage correspondant :
 
 ![feu tricolore](resources/tp5-feu-montage.jpg)
+
+[{{ site.code-spoiler }}](tp5_feu_code.md)
