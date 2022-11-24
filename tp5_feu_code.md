@@ -7,13 +7,45 @@ schema: true
 # TP 5 Bis : Code
 
 ```c
+// state of the traffic light
+#define STOP 0
+#define CAUTION 1
+#define GO 2
+
+// pinout
+#define SENSOR A0
+#define LED_RED D6
+#define LED_ORANGE D5
+#define LED_GREEN D0
+
+
+uint8_t state = STOP;
+
 void setup() {
   Serial.begin(9600);
   Serial.flush();
-  pinMode(A0, INPUT);
-  pinMode(D0, OUTPUT);
-  pinMode(D5, OUTPUT);
-  pinMode(D6, OUTPUT);
+//  pinMode(SENSOR, INPUT);
+  pinMode(LED_GREEN, OUTPUT);
+  pinMode(LED_ORANGE, OUTPUT);
+  pinMode(LED_RED, OUTPUT);
+}
+
+void go() {
+  digitalWrite(LED_GREEN, HIGH);
+  digitalWrite(LED_ORANGE, LOW);
+  digitalWrite(LED_RED, LOW);
+}
+
+void caution() {
+  digitalWrite(LED_GREEN, LOW);
+  digitalWrite(LED_ORANGE, HIGH);
+  digitalWrite(LED_RED, LOW);
+}
+
+void stop() {
+  digitalWrite(LED_GREEN, LOW);
+  digitalWrite(LED_ORANGE, LOW);
+  digitalWrite(LED_RED, HIGH);
 }
 
 void state_machine(uint8_t sensor) {
@@ -42,9 +74,9 @@ void state_machine(uint8_t sensor) {
 }
 
 void loop() {
-  value = analogRead(input);
+  uint8_t value = analogRead(SENSOR);
   Serial.println(value);
-  sensorValue = (value > 1800) ? 1 : 0;
+  uint8_t sensorValue = 0; //(value > 1800) ? 1 : 0;
   Serial.println(sensorValue);
   state_machine(sensorValue);
 }
