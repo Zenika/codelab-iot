@@ -42,6 +42,10 @@ cf : [Arduino - Ajustements des droits sous Linux](https://support.arduino.cc/hc
 
 Installer le [driver ch340](https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all) pour reconnaitre l'ESP via son port série émulé sur USB.
 
+## Menu "Port" grisé ou absent sous MacOS
+
+Logiquement, aucun driver supplémentaire n'est requis sous MacOS à partir de la version 10.14 (Mojave). Toutefois, si vous rencontrez un problème vous pouvez installer le [driver ch340](https://www.wemos.cc/en/latest/ch340_driver.html).
+
 ## Pas d'affichage sur le moniteur série
 
 Bien vérifier la correspondance entre l'instruction d'initialisation du canal de communication via la fonction  `Serial.begin(9600)` où `9600` est la vitesse en _baud/s_ et celle choisie dans la liste déroulante en bas à droite du moniteur correspondant.
