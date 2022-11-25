@@ -18,13 +18,12 @@ schema: true
 #define LED_ORANGE D5
 #define LED_GREEN D0
 
-
 uint8_t state = STOP;
 
 void setup() {
   Serial.begin(9600);
   Serial.flush();
-//  pinMode(SENSOR, INPUT);
+  pinMode(SENSOR, INPUT);
   pinMode(LED_GREEN, OUTPUT);
   pinMode(LED_ORANGE, OUTPUT);
   pinMode(LED_RED, OUTPUT);
@@ -48,36 +47,41 @@ void stop() {
   digitalWrite(LED_RED, HIGH);
 }
 
-void state_machine(uint8_t sensor) {
+#define SHORT_DURATION 100
+#define THRESHOLD 40
+void wait_if_no_action(uint16_t duration) {
+  Serial.print("Sensor values: ");
+  for (uint8_t i = 0; i < (duration / SHORT_DURATION); i++) {
+    uint8_t light = analogRead(SENSOR);
+    Serial.print(light);
+    Serial.print(" ");
+    if (light < THRESHOLD) {
+      Serial.println("object detected !!");
+      return;
+    }
+    delay(SHORT_DURATION);
+  }
+  Serial.println();
+}
+
+void loop() {
   switch (state)
   {
     case STOP:
       stop();
-      delay(4000);
+      delay(2000);
       state = GO;
       break;
     case CAUTION:
       caution();
-      delay(2000);
+      delay(1000);
       state = STOP;
       break;
     case GO:
-      if (sensor == 1) {
-        state = CAUTION;
-      } else {
-        go();
-        delay(7000);
-        state = CAUTION;
-      }
+      go();
+      wait_if_no_action(2000);      
+      state = CAUTION;
       break;
   }
-}
-
-void loop() {
-  uint8_t value = analogRead(SENSOR);
-  Serial.println(value);
-  uint8_t sensorValue = 0; //(value > 1800) ? 1 : 0;
-  Serial.println(sensorValue);
-  state_machine(sensorValue);
 }
 ```
