@@ -12,23 +12,20 @@ Brancher le capteur de lumière et afficher sa valeur sur la console série.
 {: .warning }
 ⚠️ Avant toutes manipulations de composants, il faut **débrancher** le câble USB.
 
-La résistance de la [LDR](https://en.wikipedia.org/wiki/Photoresistor){:target="_blank"} varie en fonction de la lumière : plus il fait sombre, plus sa résistance est élevée (> 1MΩ), moins il y a de courant qui passe, plus la tension aux bornes du composant est élevée.
+1. La résistance de la [LDR](https://en.wikipedia.org/wiki/Photoresistor){:target="_blank"} varie en fonction de la lumière : plus il fait sombre, plus sa résistance est élevée (> 1MΩ), moins il y a de courant qui passe, plus la tension aux bornes du composant est élevée. <br> Nous utiliserons un pont diviseur de tension afin de lire la tension aux bornes de la résistance via la broche `A0` de l'ESP et envoyer la valeur lue sur la console série.
 
-Nous utiliserons un pont diviseur de tension afin de lire la tension aux bornes de la résistance via la broche `A0` de l'ESP et envoyer la valeur lue sur la console série.
-
-Le schéma électronique est le suivant :
-
+2. Le schéma électronique est le suivant :
 ![schema-tp4](resources/tp4-schema.jpg)
 
-Voici le câblage correspondant :
-
+3. Voici le câblage correspondant :
 ![montage-tp4](resources/tp4-montage.jpg)
 
-Pour la communication série, il faut utiliser [`Serial`](https://www.arduino.cc/reference/en/language/functions/communication/serial/){:target="_blank"} :
-  - `Serial.begin()` permettant de configurer la vitesse de communication dans la fonction `setup()`
-  - `Serial.print()` et `Serial.println()` pour afficher des infos depuis l'emplacement voulu dans le code.
+4. L'API à utiliser pour mesurer la tension aux bornes de la photo-résistance est [`analogRead()`](https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/){:target="_blank"}.
 
-Exemple :
+5. Pour la communication série, il faut utiliser [`Serial`](https://www.arduino.cc/reference/en/language/functions/communication/serial/){:target="_blank"} :
+  - `Serial.begin()` permettant de configurer la vitesse de communication dans la fonction `setup()`
+  - `Serial.print()` et `Serial.println()` pour afficher des infos depuis l'emplacement voulu dans le code. <br> Exemple :
+
 ```c
 void setup() {
   Serial.begin(9600);
@@ -36,23 +33,18 @@ void setup() {
 }
 
 void loop() {
-  Serial.println("Hello devfest !!");
-  delay(100);
+  Serial.println("Hello world !!");
+  delay(100); // attente de 100 millisecondes pour éviter de flooder la console
 }
 ```
 
-Coté IDE Arduino, utiliser le moniteur série en cliquant sur le bouton suivant :
+6. Coté IDE Arduino, utiliser le moniteur série en cliquant sur le bouton suivant :
 ![bouton](resources/tp4-bouton.jpg)
 
-Dans la console qui vient de s'ouvrir, sélectionner la vitesse dans le menu déroulant en bas à droite de la fenêtre en adéquation avec la vitesse définie dans le sketch via l'instruction `Serial.begin(9600);` où `9600` est la vitesse en _baud_ par seconde.
-
+7. Dans la console qui vient de s'ouvrir, sélectionner la vitesse dans le menu déroulant en bas à droite de la fenêtre en adéquation avec la vitesse définie dans le sketch via l'instruction `Serial.begin(9600);` où `9600` est la vitesse en _baud_ par seconde.
 ![console](resources/tp4-serial.jpg)
 
-{: .tip }
-L'attente de 100 millisecondes ajoutée en fin de boucle via l'instruction [`delay()`](https://www.arduino.cc/reference/en/language/functions/time/delay/){:target="_blank"} évite de flooder la console.
-
-L'API à utiliser pour mesurer la tension aux bornes de la photo-résistance est [`analogRead()`](https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/){:target="_blank"}.
-
+----
 [{{ site.code-spoiler }}](tp4_code.md)
 
 ----

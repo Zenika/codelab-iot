@@ -22,4 +22,5 @@ Parcourir les exemples disponibles dans l'IDE sous _File_ > _Examples_ > _ESP826
 
 Pour aller plus loin, réaliser un sketch effectuant un appel en HTTPs sur le même endpoint.
 
+----
 [{{ site.code-spoiler }}](tp7_code.md#appel-en-https)
