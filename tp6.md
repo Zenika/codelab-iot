@@ -9,13 +9,14 @@ schema: true
 {: .objectiv }
 Configurer le Wifi sur l'ESP puis afficher son adresse IP.
 
-L'API pour configurer le WIFI est riche, le [quick start de la documentation](https://arduino-esp8266.readthedocs.io/en/latest/esp8266wifi/readme.html){:target="_blank"} fournit un exemple de sketch à mettre en oeuvre. Le Wifi à utiliser est soit celui de la cité des congrès soit votre 4G.
+1. L'API pour configurer le WIFI est riche, le [quick start de la documentation](https://arduino-esp8266.readthedocs.io/en/latest/esp8266wifi/readme.html){:target="_blank"} fournit un exemple de sketch à mettre en oeuvre. Le Wifi à utiliser est celui de la salle où vous êtes soit votre 4G. Attention au iPhone qui proposent un Wifi trop sécurisé pour ces cartes électroniques et qui est donc incompatible :-(
+
+2. Ne pas oublier de configurer la vitesse de communication de la console série en adéquation avec l'instruction `Serial.begin(115200);`.
 
 {: .tip }
 Il n'est pas nécessaire de modifier le câblage des composants.
 
-Ne pas oublier de configurer la vitesse de communication de la console série en adéquation avec l'instruction `Serial.begin(115200);`.
-
+----
 [{{ site.code-spoiler }}](tp6_code.md)
 
 ----
