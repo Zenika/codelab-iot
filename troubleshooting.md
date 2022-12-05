@@ -51,3 +51,7 @@ Logiquement, aucun driver supplémentaire n'est requis sous MacOS à partir de l
 Bien vérifier la correspondance entre l'instruction d'initialisation du canal de communication via la fonction  `Serial.begin(9600)` où `9600` est la vitesse en _baud/s_ et celle choisie dans la liste déroulante en bas à droite du moniteur correspondant.
 
 ![serial](resources/tp4-serial.jpg)
+
+## Procédure d'installation des libs ESP8266
+
+La procédure complète est décrite dans la [documentation officielle](https://arduino-esp8266.readthedocs.io/en/latest/){:target="_blank"}.
