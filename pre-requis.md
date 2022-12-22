@@ -10,6 +10,11 @@ schema: true
 ℹ️ Pendant les phases de téléchargement, vous pouvez [réaliser le TP 1](tp1.md)
 
 1. Installer Arduino IDE : [https://www.arduino.cc/en/software](https://www.arduino.cc/en/software){:target="_blank"} ⚠️ version 1.8.X
+
+{: .caution }
+⚠️ Il faut être administrateur de son poste et connaitre les éventuelles restrictions du proxy de votre entreprise.
+
+{:style="counter-reset:none"}
 2. Ajouter les cartes ESP8266 à l'IDE.
 3. Démarrer _Arduino IDE_ et aller dans _Preferences_;
 4. Dans le champs _Additionnals Boards Managers URLs_ mettre `https://arduino.esp8266.com/stable/package_esp8266com_index.json`. S'il y a déjà une URL, utiliser la virgule en tant que séparateur;

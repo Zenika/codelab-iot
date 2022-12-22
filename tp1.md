@@ -12,9 +12,13 @@ Découvrir le language de programmation utilisé sur les Arduinos
 1. Pour se familiariser avec le code "à la Arduino", nous allons débuter avec un outil en ligne permettant de simuler un _Sketch_ (= programme Arduino) sur un ESP avec une LED et une résistance afin de faire clignoter une LED ➡️ [suivre ce tutorial](https://create.arduino.cc/projecthub/Hack-star-Arduino/how-to-simulate-esp32-projects-online-for-free-ad21d9){:target="_blank"}
 ![simulation](resources/tp1-simulation.jpg)
 
-2. Voici [une documentation détaillée](https://docs.arduino.cc/learn/programming/sketches){:target="_blank"} sur la structure de ce sketch. Les fonctions [`pinMode()`](https://www.arduino.cc/reference/en/language/functions/digital-io/pinmode/){:target="_blank"} et [`digitalWrite()`](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/){:target="_blank"} sont utilisées respectivement pour configurer le sens entrée/sortie de la broche et pour mettre `0` (état bas ou `LOW`) ou `5 V` (état  haut ou `HIGH`) sur cette broche.
+{: .tip }
+Si vous voulez aller plus loin, [la documentation détaille](https://docs.arduino.cc/learn/programming/sketches){:target="_blank"} bien la structure des sketchs.
 
-3. Voici le code utilisé dans le TP commenté :
+{:style="counter-reset:none"}
+3. Les fonctions [`pinMode()`](https://www.arduino.cc/reference/en/language/functions/digital-io/pinmode/){:target="_blank"} et [`digitalWrite()`](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/){:target="_blank"} sont utilisées respectivement pour configurer le sens entrée/sortie de la broche et pour mettre `0` (état bas ou `LOW`) ou `5 V` (état  haut ou `HIGH`) sur cette broche.
+
+4. Voici le code commenté du TP :
 
 ```c
 /*
