@@ -16,9 +16,10 @@ Découvrir la programmation sur ESP en créant un objet connecté.
 - [ ] 1 x Plaque d'essai ou breadboard
 - [ ] 1 x Led
 - [ ] 1 x LDR 5528 (1 MΩ dans le noir)
-- [ ] 2 x Résistance 220 Ω
+- [ ] 5 x Résistance 220 Ω
 - [ ] 1 x Câble USB - Micro USB
 - [ ] 1 x Adaptateur USB-A -> USB-C
+- [ ] 1 x Feu imprimé en 3D
 
 
 ## 📝 Codelab
@@ -28,11 +29,12 @@ Découvrir la programmation sur ESP en créant un objet connecté.
 - [TP 1 : Simulation d'un ESP avec une LED](tp1.md)
 - [TP 2 : Installation de l'IDE & Blink World](tp2.md)
 - [TP 3 : Branchement d'une LED](tp3.md)
-- [TP 4 : Capteur de lumière](tp4.md)
-- [TP 5 : LED + LDR](tp5.md)
-- [TP 5 bis : Pilotage d'un feu 🚦](tp5_feu.md)
-- [TP 6 : Wifi](tp6.md)
-- [TP 7 : Endpoint](tp7.md)
+- [TP 4 : Communication série](tp4.md)
+- [TP 5 : Capteur de lumière](tp5.md)
+- [TP 6 : LED + LDR](tp6.md)
+- [TP 7 : Pilotage d'un feu 🚦](tp7.md)
+- [TP 8 : Connexion Wifi](tp8.md)
+- [TP 9 : Appel http](tp-appel-http.md)
 
 ## 📚 Documentation
 

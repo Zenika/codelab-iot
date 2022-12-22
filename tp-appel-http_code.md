@@ -1,12 +1,10 @@
 ---
-title: "TP 7 : Code réponse"
+title: "Réponse : appel en HTTP"
 nav_exclude: true
 schema: true
 ---
 
-# TP 7 : Code
-
-## Appel en HTTP
+# Réponse : appel en HTTP
 
 Exemple provenant de _File_ > _Examples_ > _ESP8266HTTPClient_ > _BasicHTTPClient_
 

@@ -24,4 +24,4 @@ Il n'est pas nécessaire de modifier le câblage des composants.
 [{{ site.code-spoiler }}](tp6_code.md)
 
 ----
-[⬅️ TP 5](tp5.md) :: [TP 7 ➡️](tp7.md)
+[⬅️ TP 5](tp5.md) :: [TP 9 ➡️](tp-appel-http.md)
