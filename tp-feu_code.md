@@ -1,10 +1,10 @@
 ---
-title: "TP 5 Bis : Code réponse"
+title: "Réponse : Pilotage d'un feu🚦"
 nav_exclude: true
 schema: true
 ---
 
-# TP 5 Bis : Code
+# Réponse : Pilotage d'un feu🚦
 
 ```c
 // state of the traffic light
