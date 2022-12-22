@@ -24,7 +24,7 @@ Découvrir la programmation sur ESP en créant un objet connecté.
 ## 📝 Codelab
 
 - [🔎 Identification et caractéristiques de chaque composant](composants.md)
-- [Installation des pré-requis](pre-requis.md)
+- [Installation des pré-requis](installation.md)
 - [TP 1 : Simulation d'un ESP avec une LED](tp1.md)
 - [TP 2 : Installation de l'IDE & Blink World](tp2.md)
 - [TP 3 : Branchement d'une LED](tp3.md)

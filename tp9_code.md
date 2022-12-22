@@ -90,7 +90,7 @@ Exemple de sortie :
 [HTTPS] begin...
 [HTTPS] GET...
 [HTTPS] GET... code: 200
-Hello devfest
+Hello maker !
 Wait 10s before next round...
 ```
 
@@ -190,8 +190,11 @@ Exemple de sortie :
 [HTTPS] begin...
 [HTTPS] GET...
 [HTTPS] GET... code: 200
-Hello devfest
+Hello maker !
 Wait 10s before next round...
 ```
 
 Dans l'exemple ci-dessus, vous aurez remarqué qu'il est bien sûr possible de ne pas vérifier les certificats SSL avec `client->setInsecure();` 😱.
+
+----
+[⬅️ Retour à l'énoncé](tp9.md)

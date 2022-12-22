@@ -1,6 +1,6 @@
 ---
 title: "TP 4 : Communication série"
-nav_order: 6
+nav_order: 24
 schema: true
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "TP 6 : LED + LDR"
-nav_order: 9
+nav_order: 26
 schema: true
 ---
 

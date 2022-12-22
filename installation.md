@@ -1,6 +1,6 @@
 ---
 title: Installations de l'IDE
-nav_order: 2
+nav_order: 20
 schema: true
 ---
 

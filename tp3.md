@@ -1,13 +1,13 @@
 ---
 title: "TP 3 : LED externe"
-nav_order: 5
+nav_order: 23
 schema: true
 ---
 
 # TP 3 : LED externe
 
 {: .objectiv }
-Câbler une LED et la faire clignoter
+Brancher une LED et la faire clignoter
 
 1. Une LED se branche toujours avec une résistance en série pour la "protéger", c'est à dire réduire la tension à ses bornes. Une led n'accepte pas une tension supérieure à 2.5V voir moins en fonction des modèles. La valeur de la résistance à utiliser pour réduire la tension se calcule avec la loi d'Ohm nottaement : `U = R * I`. Nous utilisons une valeur de 220 Ω (ohms). Celle ci est branchée sur la broche `D1`.
 

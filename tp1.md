@@ -1,6 +1,6 @@
 ---
 title: "TP 1 : Simulation d'un ESP"
-nav_order: 3
+nav_order: 21
 schema: true
 ---
 
@@ -43,4 +43,4 @@ void loop() {
 ```
 
 ----
-[⬅️ Pré-requis](pre-requis.md) :: [TP 2 ➡️](tp2.md)
+[⬅️ Installation](installation.md) :: [TP 2 ➡️](tp2.md)

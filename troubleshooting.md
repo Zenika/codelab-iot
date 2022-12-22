@@ -1,6 +1,6 @@
 ---
 title: 🩺 Troubleshooting
-nav_order: 20
+nav_order: 10
 schema: true
 ---
 

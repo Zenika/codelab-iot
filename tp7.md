@@ -1,6 +1,6 @@
 ---
 title: "TP 7 : Pilotage d'un feu🚦"
-nav_order: 10
+nav_order: 27
 schema: true
 ---
 
