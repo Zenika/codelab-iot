@@ -1,26 +1,41 @@
 ---
-title: "TP 7 : Endpoint"
+title: "TP 7 : Pilotage d'un feu🚦"
 nav_order: 10
 schema: true
 ---
 
-# TP 7 : Faire un appel HTTP
+# TP 7 : Faire clignoter un feu tricolore 🚦
 
 {: .objectiv }
-Appeler un endpoint en HTTP sur [Mockbin.org](https://mockbin.org/){:target="_blank"} depuis l'ESP
+Faire clignoter le feu tricolore
 
-[Mockbin.org](https://mockbin.org/){:target="_blank"}  est un service de test de endpoint sur lequel il est possible de créer des urls customs, des paramètres attendus ainsi qu'une réponse personnalisée... Le site fournit également une page [d'historique des appels via l'interface pour retrouver son appel]({{ site.endpoint.https }}/log){:target="_blank"}.
+![feu tricolore](resources/tp7-feu.jpg)
 
-![historique](resources/tp7-historique.jpg)
+Ce feu est imprimé en 3D en PLA, voici les fichiers [des modèles du feu](3d-feu.stl) et [de la base](3d-base.stl).
 
-## Appel en HTTP
-Parcourir les exemples disponibles dans l'IDE sous _File_ > _Examples_ > _ESP8266HTTPClient_ pour implémenter un sketch appelant l'url [{{ site.endpoint.https }}]({{ site.endpoint.https }}){:target="_blank"} en GET.
+1. Ecrire un sketch implémentant le cycle de changement d'état des leds suivant :
+ - Rouge : 5  secondes
+ - Vert : 7 secondes
+ - Orange : 2 secondes
 
-[{{ site.code-spoiler }}](tp7_code.md#appel-en-http)
+2. Comme les boutons pour déclencher une traversée d'un piéton ou les capteurs magnétiques sous la chaussée, utiliser le capteur de lumière du TP précédent pour accélérer le passage au rouge du feu. Lors de l'activation du capteur, le feu devra passer au orange au maximum dans les 2 secondes puis continuer son cycle normal.
 
-## Appel en HTTPs
+{: .tip }
+N'hésitez pas à séparer le contrôle de chaque led dans des méthodes
 
-Pour aller plus loin, réaliser un sketch effectuant un appel en HTTPs sur le même endpoint.
+{:style="counter-reset:none"}
+3. Le schéma électronique reprend celui du TP précédent avec 2 LEDs en plus :
+![schema](resources/tp7-schema.jpg)
+
+4. Voici le câblage correspondant :
+
+{: .caution }
+⚠️ Avant toutes manipulations de composants, il faut **débrancher** le câble USB.
+
+![montage](resources/tp7-montage.jpg)
 
 ----
-[{{ site.code-spoiler }}](tp7_code.md#appel-en-https)
+[{{ site.code-spoiler }}](tp7_code.md)
+
+----
+[⬅️ TP 6](tp6.md) :: [TP 8 ➡️](tp8.md)

@@ -12,7 +12,7 @@ schema: true
 1. Installer Arduino IDE : [https://www.arduino.cc/en/software](https://www.arduino.cc/en/software){:target="_blank"} ⚠️ version 1.8.X
 
 {: .caution }
-⚠️ Il faut être administrateur de son poste et connaitre les éventuelles restrictions du proxy de votre entreprise.
+⚠️ Il faut être administrateur de son poste et connaitre les éventuelles restrictions du proxy / VPN de votre entreprise.
 
 {:style="counter-reset:none"}
 2. Ajouter les cartes ESP8266 à l'IDE.
