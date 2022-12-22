@@ -10,7 +10,7 @@ schema: true
 Découvrir le language de programmation utilisé sur les Arduinos
 
 1. Pour se familiariser avec le code "à la Arduino", nous allons débuter avec un outil en ligne permettant de simuler un _Sketch_ (= programme Arduino) sur un ESP avec une LED et une résistance afin de faire clignoter une LED ➡️ [suivre ce tutorial](https://create.arduino.cc/projecthub/Hack-star-Arduino/how-to-simulate-esp32-projects-online-for-free-ad21d9){:target="_blank"}
-![simulation](resources/tp1-simulation.jpg)
+![simulation](resources/tp-simulation.jpg)
 
 {: .tip }
 Si vous voulez aller plus loin, [la documentation détaille](https://docs.arduino.cc/learn/programming/sketches){:target="_blank"} bien la structure des sketchs.

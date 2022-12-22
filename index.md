@@ -26,7 +26,7 @@ Découvrir la programmation sur ESP en créant un objet connecté.
 
 - [🔎 Identification et caractéristiques de chaque composant](composants.md)
 - [Installation des pré-requis](pre-requis.md)
-- [TP 1 : Simulation d'un ESP avec une LED](tp1.md)
+- [TP 1 : Simulation d'un ESP avec une LED](tp-simulation.md)
 - [TP 2 : Installation de l'IDE & Blink World](tp-blink.md)
 - [TP 3 : Branchement d'une LED](tp-led-ext.md)
 - [TP 4 : Communication série](tp-serial.md)
