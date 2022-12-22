@@ -1,5 +1,5 @@
 ---
-title: "TP 2 : Utilisation de l'IDE"
+title: "TP 2 : Blink World"
 nav_order: 4
 schema: true
 ---
@@ -15,10 +15,10 @@ Configuration de l'environnement Arduino IDE et écrire un _sketch_ pour faire c
 3. Sélectionner le port de communication via le menu _Tools_ > _Port_ > `/dev/cu.usbserial-*` sous GNU Linux ou macOS, `COM` sous windows
  ![port](resources/arduino-ide-board-port.jpg)
 4. Créer un premier sketch faisant clignoter la led intégrée en utilisant un snippet de code existant : aller dans _File_ > _Examples_ > _ESP8266_ > _Blink_. Le _sketch_ est le même que dans le TP précédent.
-![port](resources/tp2-blink.jpg)
-5. Lancer la compilation via le menu _Sketch_ > _Compile_ (ou le bouton "Check")![port](resources/tp2-compile.jpg)
-6. Uploader le programme via le menu _Sketch_ > _Upload_ (ou le bouton "Flèche" surligné en rouge) ![port](resources/tp2-upload.jpg)
-7. Admirer la led clignoter 🎉 ![clignote](resources/tp2-led-interne-clignote.gif)
+![port](resources/tp-blink-example.jpg)
+5. Lancer la compilation via le menu _Sketch_ > _Compile_ (ou le bouton "Check")![port](resources/tp-blink-compile.jpg)
+6. Uploader le programme via le menu _Sketch_ > _Upload_ (ou le bouton "Flèche" surligné en rouge) ![port](resources/tp-blink-upload.jpg)
+7. Admirer la led clignoter 🎉 ![clignote](resources/tp-blink-led-interne-clignote.gif)
 
 ----
 [⬅️ TP 1](tp1.md) :: [TP 3 ➡️](tp3.md)
