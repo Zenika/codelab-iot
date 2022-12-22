@@ -31,8 +31,8 @@ Découvrir la programmation sur ESP en créant un objet connecté.
 - [TP 3 : Branchement d'une LED](tp3.md)
 - [TP 4 : Communication série](tp4.md)
 - [TP 5 : Capteur de lumière](tp5.md)
-- [TP 6 : LED + LDR](tp6.md)
-- [TP 7 : Pilotage d'un feu 🚦](tp7.md)
+- [TP 6 : LED + LDR](tp-led-ldr.md)
+- [TP 7 : Pilotage d'un feu 🚦](tp-feu.md)
 - [TP 8 : Connexion Wifi](tp-wifi.md)
 - [TP 9 : Appel http](tp-appel-http.md)
 
