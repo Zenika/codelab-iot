@@ -21,4 +21,4 @@ Configuration de l'environnement Arduino IDE et écrire un _sketch_ pour faire c
 7. Admirer la led clignoter 🎉 ![clignote](resources/tp-blink-led-interne-clignote.gif)
 
 ----
-[⬅️ TP 1](tp1.md) :: [TP 3 ➡️](tp3.md)
+[⬅️ TP 1](tp-simulation.md) :: [TP 3 ➡️](tp-led-ext.md)

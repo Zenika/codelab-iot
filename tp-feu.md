@@ -25,14 +25,14 @@ N'hésitez pas à séparer le contrôle de chaque led dans des méthodes
 
 {:style="counter-reset:none"}
 3. Le schéma électronique reprend celui du TP précédent avec 2 LEDs en plus :
-![feu tricolore](resources/tp-feu-schema.jpg)
+![schema](resources/tp-feu-schema.jpg)
 
 4. Voici le câblage correspondant :
 
 {: .caution }
 ⚠️ Avant toutes manipulations de composants, il faut **débrancher** le câble USB.
 
-![feu tricolore](resources/tp-feu-montage.jpg)
+![montage](resources/tp-feu-montage.jpg)
 
 ----
 [{{ site.code-spoiler }}](tp_feu_code.md)

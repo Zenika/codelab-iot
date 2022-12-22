@@ -43,4 +43,4 @@ void loop() {
 ```
 
 ----
-[⬅️ Pré-requis](pre-requis.md) :: [TP 2 ➡️](tp2.md)
+[⬅️ Pré-requis](pre-requis.md) :: [TP 2 ➡️](tp-blink.md)
