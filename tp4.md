@@ -20,7 +20,7 @@ void setup() {
 }
 
 void loop() {
-  Serial.println("Hello world !!");
+  Serial.println("Hello maker !!");
   delay(100); // attente de 100 millisecondes pour éviter de flooder la console
 }
 ```
