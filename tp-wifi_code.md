@@ -1,10 +1,10 @@
 ---
-title: "TP 6 : Code réponse"
+title: "Réponse : Connecter l'ESP au Wifi"
 nav_exclude: true
 schema: true
 ---
 
-# TP 6 : Code
+# Réponse : Connecter l'ESP au Wifi
 
 ```c
 #include <ESP8266WiFi.h>
@@ -33,4 +33,4 @@ void loop() {}
 
 Exemple de sortie console :
 
-![console-tp6](resources/tp6-console.jpg)
+![console-tp](resources/tp-wifi-console.jpg)
