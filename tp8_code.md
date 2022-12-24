@@ -31,7 +31,7 @@ void setup()
 void loop() {}
 ```
 
-Exemple de sortie console :
+Exemple de sortie console, ne pas oublier de bien sélectionner la vitesse de connexion :
 
 ![console-tp8](resources/tp8-console.jpg)
 

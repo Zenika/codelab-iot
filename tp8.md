@@ -21,7 +21,7 @@ Attention au iPhone qui proposent un Wifi trop sécurisé pour ces cartes élect
 Il n'est pas nécessaire de modifier le câblage des composants.
 
 ----
-[{{ site.code-spoiler }}](tp6_code.md)
+[{{ site.code-spoiler }}](tp8_code.md)
 
 ----
 [⬅️ TP 7](tp7.md) :: [TP 9 ➡️](tp9.md)
