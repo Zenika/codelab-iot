@@ -1,5 +1,5 @@
 ---
-title: "TP 2 : Utilisation de l'IDE"
+title: "TP 2 : Blink World"
 nav_order: 22
 schema: true
 ---
@@ -9,15 +9,20 @@ schema: true
 {: .objectiv }
 Configuration de l'environnement Arduino IDE et écrire un _sketch_ pour faire clignoter la led interne.
 
-1. Dans Arduino IDE, aller dans le menu _Tools_ > _Board: .*_ >, sélectionner _ESP8266 Boards_ > _LOLIN(WEMOS) D1 R2 & mini_
- ![select](resources/arduino-ide-board-select.jpg)
-2. Connecter l'ESP avec le câble USB
-3. Sélectionner le port de communication via le menu _Tools_ > _Port_ > `/dev/cu.usbserial-*` sous GNU Linux ou macOS, `COM` sous windows
- ![port](resources/arduino-ide-board-port.jpg)
+{: .caution }
+⚠️ Nous déclinons toute responsabilité en cas de mauvais branchement ou mauvaise manipulation.
+
+1. Assurez vous qu'aucun fil n'est branché sur la breadboard, uniquement le micro-contrôleur. Brancher le câble USB sur la carte électronique à l'un des ports USB de votre machine. Utilisez si nécessaire l'adaptateur USB-C.
+2. Dans Arduino IDE, ouvrir le menu déroulant "Select Board", sélectionner le port de communication associé à votre carte : `/dev/cu.usbserial-*` sous GNU Linux ou macOS, `COM` sous windows. Il est probable qu'il faille essayer tous les ports pour trouver la carte...
+ ![port](resources/tp2-board-port.jpg)
+3. Dans la fenêtre qui s'est ouverte, saisir `wemos` dans le champs de recherche puis sélectionner _LOLIN(WEMOS) D1 R2 & mini_ puis valider
+ ![select](resources/tp2-board-select.jpg)
+
 4. Créer un premier sketch faisant clignoter la led intégrée en utilisant un snippet de code existant : aller dans _File_ > _Examples_ > _ESP8266_ > _Blink_. Le _sketch_ est le même que dans le TP précédent.
 ![port](resources/tp2-blink.jpg)
-5. Lancer la compilation via le menu _Sketch_ > _Compile_ (ou le bouton "Check")![port](resources/tp2-compile.jpg)
-6. Uploader le programme via le menu _Sketch_ > _Upload_ (ou le bouton "Flèche" surligné en rouge) ![port](resources/tp2-upload.jpg)
+5. Lancer la compilation et l'upload du _sketch_ via le bouton "Flèche" surligné en rouge. Le log s'affiche en base de l'écran. ![port](resources/tp2-upload.jpg)
+6. Lorsque le flashage est terminé, la log est de la forme suivante : ![log](resources/tp2-upload-fin.jpg)
+
 
 {: .tip }
 En cas d'erreur d'upload, consulter [la page d'aide des problèmes fréquents](troubleshooting.md#erreur-dupload)

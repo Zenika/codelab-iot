@@ -9,7 +9,7 @@ schema: true
 {: .tip }
 ℹ️ Pendant les phases de téléchargement, vous pouvez [réaliser le TP 1](tp1.md)
 
-1. Installer Arduino IDE : [https://www.arduino.cc/en/software](https://www.arduino.cc/en/software){:target="_blank"} ⚠️ version 1.8.X
+1. Installer Arduino IDE : [https://www.arduino.cc/en/software](https://www.arduino.cc/en/software){:target="_blank"}
 
 {: .caution }
 ⚠️ Il faut être administrateur de son poste et connaitre les éventuelles restrictions du proxy / VPN de votre entreprise.
