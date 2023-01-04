@@ -1,24 +1,28 @@
 ---
-title: "TP 6 : Wifi"
-nav_order: 9
+title: "TP 6 : LED + LDR"
+nav_order: 26
 schema: true
 ---
 
-# TP 6 : Connecter l'ESP au Wifi
+# TP 6 : Allumer la LED en fonction de la luminosité
 
 {: .objectiv }
-Configurer le Wifi sur l'ESP puis afficher son adresse IP.
+Allumer la LED si une ombre est détectée.
 
-1. L'API pour configurer le WIFI est riche, le [quick start de la documentation](https://arduino-esp8266.readthedocs.io/en/latest/esp8266wifi/readme.html){:target="_blank"} fournit un exemple de sketch à mettre en oeuvre. Le Wifi à utiliser est celui de la salle où vous êtes soit votre 4G.
+1. Le schéma électronique est un mélange des 2 TPs précédents :
+  - la LED + résistance sur le port `D1`
+  - pont de résistances sur `A0`
+![schema-tp5](resources/tp6-schema.jpg)
 
-{: .warning }
-Attention au iPhone qui proposent un Wifi trop sécurisé pour ces cartes électroniques et qui est donc incompatible :-(
+2. Voici le câblage correspondant :
+
+{: .caution }
+⚠️ Avant toutes manipulations de composants, il faut **débrancher** le câble USB.
+
+![montage-tp5](resources/tp6-montage.jpg)
 
 {:style="counter-reset:none"}
-2. Ne pas oublier de configurer la vitesse de communication de la console série en adéquation avec l'instruction `Serial.begin(115200);`.
-
-{: .tip }
-Il n'est pas nécessaire de modifier le câblage des composants.
+3. Coté code, les instructions de contrôle d'exécution habituelles sont disponibles : `if`, `then`, `else`...
 
 ----
 [{{ site.code-spoiler }}](tp6_code.md)

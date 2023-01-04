@@ -1,6 +1,6 @@
 ---
 title: 🔎 Composants
-nav_order: 21
+nav_order: 5
 schema: true
 ---
 

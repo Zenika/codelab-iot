@@ -1,6 +1,6 @@
 ---
 title: "TP 2 : Utilisation de l'IDE"
-nav_order: 4
+nav_order: 22
 schema: true
 ---
 
@@ -18,6 +18,11 @@ Configuration de l'environnement Arduino IDE et écrire un _sketch_ pour faire c
 ![port](resources/tp2-blink.jpg)
 5. Lancer la compilation via le menu _Sketch_ > _Compile_ (ou le bouton "Check")![port](resources/tp2-compile.jpg)
 6. Uploader le programme via le menu _Sketch_ > _Upload_ (ou le bouton "Flèche" surligné en rouge) ![port](resources/tp2-upload.jpg)
+
+{: .tip }
+En cas d'erreur d'upload, consulter [la page d'aide des problèmes fréquents](troubleshooting.md#erreur-dupload)
+
+{:style="counter-reset:none"}
 7. Admirer la led clignoter 🎉 ![clignote](resources/tp2-led-interne-clignote.gif)
 
 ----

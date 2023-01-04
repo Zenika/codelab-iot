@@ -1,36 +1,31 @@
 ---
-title: "TP 6 : Code réponse"
+title: "Réponse : LED + LDR"
 nav_exclude: true
 schema: true
 ---
 
-# TP 6 : Code
+# Réponse : LED + LDR
 
 ```c
-#include <ESP8266WiFi.h>
-
-void setup()
-{
-  Serial.begin(115200);
-  Serial.println();
-
-  WiFi.begin("network-name", "pass-to-network");
-
-  Serial.print("Connecting");
-  while (WiFi.status() != WL_CONNECTED)
-  {
-    delay(500);
-    Serial.print(".");
-  }
-  Serial.println();
-
-  Serial.print("Connected, IP address: ");
-  Serial.println(WiFi.localIP());
+void setup() {
+  Serial.begin(9600);
+  Serial.flush();
+  pinMode(A0, INPUT);
+  pinMode(D1, OUTPUT);
 }
 
-void loop() {}
+void loop() {
+  double ldr = analogRead(A0);
+  Serial.print("valeur : ");
+  Serial.println(ldr);
+  if (ldr < 25) {  // 25 dépend de la luminosité ambiante, à ajuster en fonction des valeurs lues avec et sans ombre
+    digitalWrite(D1, HIGH);
+  } else {
+    digitalWrite(D1, LOW);
+  }
+  delay(100);
+}
 ```
 
-Exemple de sortie console :
-
-![console-tp6](resources/tp6-console.jpg)
+----
+[⬅️ Retour à l'énoncé](tp6.md)
