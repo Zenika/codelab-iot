@@ -5,7 +5,8 @@ site : https://zenika.github.io/codelab-iot/
 
 ## Dev
 
-lancement du serveur local :
+Lancement du serveur local :
 ```
-bundle exec jekyll serve -t
+bundle exec jekyll serve -t --incremental
 ```
+puis aller sur http://127.0.0.1:4000/codelab-iot/
