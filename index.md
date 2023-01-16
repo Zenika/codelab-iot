@@ -16,10 +16,10 @@ Découvrir la programmation sur ESP en créant un objet connecté.
 - [ ] 1 x Plaque d'essai ou breadboard
 - [ ] 1 x Led
 - [ ] 1 x LDR 5528 (1 MΩ dans le noir)
-- [ ] 5 x Résistance 220 Ω
+- [ ] 5 x Résistances 220 Ω
 - [ ] 1 x Câble USB - Micro USB
 - [ ] 1 x Adaptateur USB-A -> USB-C
-- [ ] 1 x Feu imprimé en 3D
+- [ ] 1 x Feu imprimé en 3D + base
 
 ## 📝 Codelab
 
