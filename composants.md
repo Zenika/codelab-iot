@@ -48,7 +48,7 @@ Ce composant n'est pas polarisé, c'est à dire qu'il n'y a pas de broche positi
 
 ## Résistance
 
-Norme du code des couleurs : [CEI_60757](https://fr.wikipedia.org/wiki/CEI_60757)
+Norme du code des couleurs : [CEI_60757](https://fr.wikipedia.org/wiki/CEI_60757){:target="_blank"}
 
 Mnémonic pour se rappeler des couleurs :
 ```
