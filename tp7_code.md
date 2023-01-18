@@ -47,7 +47,7 @@ void stop() {
 }
 
 #define SHORT_DURATION 100
-#define THRESHOLD 40
+#define THRESHOLD 40 // ajuster le seuil en fonction des conditions lumineuses
 void wait_if_no_action(uint16_t duration) {
   Serial.print("Sensor values: ");
   for (uint8_t i = 0; i < (duration / SHORT_DURATION); i++) {
@@ -68,17 +68,17 @@ void loop() {
   {
     case STOP:
       stop();
-      delay(2000);
+      delay(5000);
       state = GO;
       break;
     case CAUTION:
       caution();
-      delay(1000);
+      delay(2000);
       state = STOP;
       break;
     case GO:
       go();
-      wait_if_no_action(2000);      
+      wait_if_no_action(7000);      
       state = CAUTION;
       break;
   }
