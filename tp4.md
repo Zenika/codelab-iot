@@ -26,10 +26,13 @@ void loop() {
 ```
 
 {:style="counter-reset:none"}
-2. Coté IDE Arduino, utiliser le moniteur série en cliquant sur le bouton suivant :
+
+2. Uploader votre sketch dans l'ESP avec le bouton introduit au TP2
+
+3. Coté IDE Arduino, utiliser le moniteur série en cliquant sur le bouton suivant :
 ![bouton](resources/tp4-bouton.jpg)
 
-3. Dans la console qui vient de s'ouvrir, sélectionner la vitesse dans le menu déroulant en bas à droite de la fenêtre en adéquation avec la vitesse définie dans le sketch via l'instruction `Serial.begin(9600);` où `9600` est la vitesse en _baud_ par seconde.
+4. Dans la console qui vient de s'ouvrir, sélectionner la vitesse dans le menu déroulant en bas à droite de la fenêtre en adéquation avec la vitesse définie dans le sketch via l'instruction `Serial.begin(9600);` où `9600` est la vitesse en _baud_ par seconde.
 ![console](resources/tp4-serial.jpg)
 
 ----
