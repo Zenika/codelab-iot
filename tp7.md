@@ -10,13 +10,13 @@ schema: true
 Faire clignoter le feu tricolore
 
 ![feu tricolore](resources/tp7-feu.jpg)
- 
+
 Ce feu est imprimé en 3D en PLA, voici les fichiers des modèles :
  - porte leds : [vue 3d](https://github.com/Zenika/codelab-iot/blob/main/resources/3d-feu.stl){:target="_blank"}, [stl](resources/3d-feu.stl){:target="_blank"}
  - base : [vue 3d](https://github.com/Zenika/codelab-iot/blob/main/resources/3d-base.stl){:target="_blank"}, [stl](resources/3d-base.stl){:target="_blank"}
 
 1. Ecrire un sketch implémentant le cycle de changement d'état des leds suivant :
- - Rouge 🔴 : 5  secondes
+ - Rouge 🔴 : 5 secondes
  - Vert 🟢 : 7 secondes
  - Orange 🟠 : 2 secondes
 
