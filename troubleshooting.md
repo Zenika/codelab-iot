@@ -6,11 +6,11 @@ schema: true
 
 # 🩺 Troubleshooting
 
-## Menu "Port" grisé ou absent sous Windows
+## Menu "Port" grisé ou absent dans l'Arduino IDE sous Windows
 
 Installer le [driver ch340](https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all).
 
-## Menu "Port" grisé ou absent sous MacOS
+## Menu "Port" grisé ou absent dans l'Arduino IDE sous MacOS
 
 Installer le [driver ch340](https://www.wemos.cc/en/latest/ch340_driver.html). Néanmoins, aucun driver supplémentaire n'est requis depuis la version 10.14 (Mojave).
 
