@@ -6,17 +6,17 @@ schema: true
 
 # 🩺 Troubleshooting
 
-## Vérification du fonctionnement de la LED
+## Menu "Port" grisé ou absent sous Windows
 
-Si la LED ne clignote pas, commencer par tester en l'inversant, elle ne grillera pas ;-) (tout de suite)
+Installer le [driver ch340](https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all).
 
-Le montage suivant permet d'allumer de manière continue la LED sans écrire un sketch
+## Menu "Port" grisé ou absent sous MacOS
 
-![montage-led](resources/trouble-montage-led.jpg)
+Installer le [driver ch340](https://www.wemos.cc/en/latest/ch340_driver.html). Néanmoins, aucun driver supplémentaire n'est requis depuis la version 10.14 (Mojave).
 
 ## Erreur d'upload
 
-En cas d'erreur d'upload, il faut ré-essayer.
+En cas d'erreur d'upload, il faut ré-essayer 🔄.
 
 Vérifier également que le cable USB de l'ESP8266 est bien connecté à l'ordinateur ! ;)
 
@@ -24,7 +24,7 @@ Si le problème persiste, appuyer sur le bouton `RESET` situé en haut à droite
 
 Voir également cet article : [Arduino - Déterminer qui bloque un port](https://support.arduino.cc/hc/en-us/articles/4407830972050-Find-and-stop-process-blocking-a-port)
 
-## `Permission denied` sous Linux
+## Upload en erreur : `Permission denied` sous Linux
 
 - `avrdude: ser_open(): can't open device <port>: Permission denied (Linux)` : vérifier que l'utilisateur courant est bien dans le groupe `dialout` via la commande `id` :
 ```
@@ -38,20 +38,16 @@ cf : [Arduino - Ajustements des droits sous Linux](https://support.arduino.cc/hc
 
 - Sur les distributions Ubuntu récente, le programme `brltty` bloque le port série et empêche l'upload ==> Le désinstaller via la commande : `sudo apt remove -y brltty`.
 
-## Menu "Port" grisé ou absent sous Windows
+## Vérification du fonctionnement de la LED
 
-Installer le [driver ch340](https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all) pour reconnaitre l'ESP via son port série émulé sur USB.
+Si la LED ne clignote pas, commencer par tester en l'inversant, elle ne grillera pas ;-) (tout de suite)
 
-## Menu "Port" grisé ou absent sous MacOS
+Le montage suivant permet d'allumer de manière continue la LED sans écrire un sketch
 
-Logiquement, aucun driver supplémentaire n'est requis sous MacOS à partir de la version 10.14 (Mojave). Toutefois, si vous rencontrez un problème vous pouvez installer le [driver ch340](https://www.wemos.cc/en/latest/ch340_driver.html).
+![montage-led](resources/trouble-montage-led.jpg)
 
 ## Pas d'affichage sur le moniteur série
 
 Bien vérifier la correspondance entre l'instruction d'initialisation du canal de communication via la fonction  `Serial.begin(9600)` où `9600` est la vitesse en _baud/s_ et celle choisie dans la liste déroulante en bas à droite du moniteur correspondant.
 
 ![serial](resources/tp4-serial.jpg)
-
-## Procédure d'installation des libs ESP8266
-
-La procédure complète est décrite dans la [documentation officielle](https://arduino-esp8266.readthedocs.io/en/latest/){:target="_blank"}.
