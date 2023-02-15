@@ -1,29 +1,27 @@
 ---
-title: "TP 9 : Appel HTTP"
+title: "TP 9 : Wifi"
 nav_order: 29
 schema: true
 ---
 
-# TP 9 : Faire un appel HTTP
+# TP 9 : Connecter l'ESP au Wifi
 
 {: .objectiv }
-Appeler un endpoint en HTTP sur [Mockbin.org](https://mockbin.org/){:target="_blank"} depuis l'ESP
+Configurer le Wifi sur l'ESP puis afficher son adresse IP.
 
-[Mockbin.org](https://mockbin.org/){:target="_blank"}  est un service de test de endpoint sur lequel il est possible de créer des urls customs, des paramètres attendus ainsi qu'une réponse personnalisée... Le site fournit également une page [d'historique des appels via l'interface pour retrouver son appel]({{ site.endpoint.https }}/log){:target="_blank"}.
+1. L'API pour configurer le WIFI est riche, le [quick start de la documentation](https://arduino-esp8266.readthedocs.io/en/latest/esp8266wifi/readme.html){:target="_blank"} fournit un exemple de sketch à mettre en oeuvre. Le Wifi à utiliser est celui de la salle où vous êtes soit votre 4G.
 
-![historique](resources/tp9-historique.jpg)
+{: .warning }
+Attention au iPhone qui proposent un Wifi trop sécurisé pour ces cartes électroniques et qui est donc incompatible :-(
 
-## Appel en HTTP
-Parcourir les exemples disponibles dans l'IDE sous _File_ > _Examples_ > _ESP8266HTTPClient_ pour implémenter un sketch appelant l'url [{{ site.endpoint.https }}]({{ site.endpoint.https }}){:target="_blank"} en GET.
+{:style="counter-reset:none"}
+2. Ne pas oublier de configurer la vitesse de communication de la console série en adéquation avec l'instruction `Serial.begin(115200);`.
 
-[{{ site.code-spoiler }}](tp9_code.md#appel-en-http)
-
-## Appel en HTTPs
-
-Pour aller plus loin, réaliser un sketch effectuant un appel en HTTPs sur le même endpoint.
+{: .tip }
+Il n'est pas nécessaire de modifier le câblage des composants.
 
 ----
-[{{ site.code-spoiler }}](tp9_code.md#appel-en-https)
+[{{ site.code-spoiler }}](tp9_code.md)
 
 ----
-[⬅️ TP 8](tp8.md) :: [Fin 🎉 ➡️](z-fin.md)
+[⬅️ TP 8](tp8.md) :: [TP 10 ➡️](tp10.md)

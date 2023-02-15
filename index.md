@@ -20,6 +20,7 @@ Découvrir la programmation sur ESP en créant un objet connecté.
 - [ ] 1 x Câble USB - Micro USB
 - [ ] 1 x Adaptateur USB-A -> USB-C
 - [ ] 1 x Feu imprimé en 3D + base
+- [ ] 1 x Capteur de distance HC-SR04
 
 ## 📝 Codelab
 
@@ -32,8 +33,9 @@ Découvrir la programmation sur ESP en créant un objet connecté.
 - [TP 5 : Capteur de lumière](tp5.md)
 - [TP 6 : LED + LDR](tp6.md)
 - [TP 7 : Pilotage d'un feu 🚦](tp7.md)
-- [TP 8 : Wifi](tp8.md)
-- [TP 9 : Endpoint](tp9.md)
+- [TP 8 : Capteur de distance](tp8.md)
+- [TP 9 : Wifi](tp9.md)
+- [TP 10 : Endpoint](tp10.md)
 
 ## 📚 Documentation
 
