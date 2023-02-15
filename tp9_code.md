@@ -33,7 +33,7 @@ void loop() {}
 
 Exemple de sortie console, ne pas oublier de bien sélectionner la vitesse de connexion :
 
-![console-tp8](resources/tp8-console.jpg)
+![console-tp9](resources/tp9-console.jpg)
 
 ----
-[⬅️ Retour à l'énoncé](tp8.md)
+[⬅️ Retour à l'énoncé](tp9.md)
