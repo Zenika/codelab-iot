@@ -48,6 +48,6 @@ Le montage suivant permet d'allumer de manière continue la LED sans écrire un 
 
 ## Pas d'affichage sur le moniteur série
 
-Bien vérifier la correspondance entre l'instruction d'initialisation du canal de communication via la fonction  `Serial.begin(9600)` où `9600` est la vitesse en _baud/s_ et celle choisie dans la liste déroulante en bas à droite du moniteur correspondant.
+Bien vérifier la correspondance entre l'instruction d'initialisation du canal de communication via la fonction `Serial.begin(9600)` où `9600` est la vitesse en _baud/s_ et celle choisie dans la liste déroulante en bas à droite du moniteur correspondant.
 
 ![serial](resources/tp4-serial.jpg)

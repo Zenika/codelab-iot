@@ -8,7 +8,7 @@ schema: true
 
 ## Micro-contrôleur
 
-Le micro-contrôleur utilisé est un WeMos D1 mini qui intègre sur la même circuit imprimé :
+Le micro-contrôleur utilisé est un ESP8266 de type WeMos D1 mini qui intègre sur la même circuit imprimé :
   - Processeur ESP8266EX : 32-bit CPU @ 80 MHz
   - Flash Size 4: MB
   - Wi-Fi : IEEE 802.11 b/g/n
