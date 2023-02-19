@@ -1,5 +1,5 @@
 ---
-title: "TP 6 : LED + LDR"
+title: "TP 6 🌓 LED + LDR"
 nav_order: 26
 schema: true
 ---

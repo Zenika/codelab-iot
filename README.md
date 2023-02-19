@@ -2,6 +2,9 @@
 
 site : https://zenika.github.io/codelab-iot/
 
+## Préparation TP
+
+Créer un nouveau [mockbin](https://mockbin.org/) avec tout les paramètres par défaut puis reporter l'url dans le fichier `_config.yml` dans les clés `endpoint.http`, *bien enlever le `s`* et `endpoint.https`.
 
 ## Dev
 

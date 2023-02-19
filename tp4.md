@@ -1,5 +1,5 @@
 ---
-title: "TP 4 : Communication série"
+title: "TP 4 ⚙️ Communication série"
 nav_order: 24
 schema: true
 ---

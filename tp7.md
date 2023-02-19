@@ -1,5 +1,5 @@
 ---
-title: "TP 7 : Pilotage d'un feu🚦"
+title: "TP 7 🚦 Pilotage d'un feu"
 nav_order: 27
 schema: true
 ---

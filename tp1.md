@@ -1,5 +1,5 @@
 ---
-title: "TP 1 : Simulation d'un ESP"
+title: "TP 1 👾 Simulation d'un ESP"
 nav_order: 21
 schema: true
 ---
@@ -43,4 +43,4 @@ void loop() {
 ```
 
 ----
-[⬅️ Installation](installation.md) :: [TP 2 ➡️](tp2.md)
+[TP 2 ➡️](tp2.md)

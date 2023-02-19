@@ -43,7 +43,7 @@ Explications : [circuits-diy](https://www.circuits-diy.com/how-to-blink-led-usin
 La [LDR](https://en.wikipedia.org/wiki/Photoresistor){:target="_blank"}, ou photo-résistance, est une resistance dont la valeur varie en fonction de la lumière : plus il fait sombre, plus sa résistance est élevée (> 1MΩ), moins il y a de courant qui passe, plus la tension aux bornes du composant est élevée.
 Ce composant n'est pas polarisé, c'est à dire qu'il n'y a pas de broche positive (+) et moins (-).
 
-![LCD / photorésistance](resources/photoresistor.jpg)
+![LDR / photorésistance](resources/photoresistor.jpg)
 
 ## Résistance
 
@@ -59,6 +59,12 @@ Ne Manger Rien Ou Jeûner, Voilà Bien Votre Grande Bêtise
 Voir [ce site pour le calcul des valeurs de résistances](https://www.electronique-radioamateur.fr/elec/composants/resistance-code-couleurs.php){:target="_blank"}.
 
 ![resistance](resources/resistors.jpg)
+
+## Capteur de distance
+
+Le capteur de distance est un modèle HC-SR04. Il fonctionne en mesurant le temps de propagation des ultrasons rebondissant sur un obstacle.
+
+![HC-SR04](resources/HC-SR04.jpg)
 
 ----
 Sources : [microcontrollerslab](https://microcontrollerslab.com){:target="_blank"}, [element14](https://element14.com){:target="_blank"}, [raspberrypi](https://magpi.raspberrypi.com){:target="_blank"}, [circuits-diy](https://www.circuits-diy.com){:target="_blank"}

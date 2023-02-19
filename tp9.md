@@ -1,5 +1,5 @@
 ---
-title: "TP 9 : Wifi"
+title: "TP 9 📡 Wifi"
 nav_order: 29
 schema: true
 ---

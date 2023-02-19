@@ -8,11 +8,20 @@ schema: true
 
 ## Mesure de distance
 
-La documentation utilisée est celle ci : [https://randomnerdtutorials.com/esp8266-nodemcu-hc-sr04-ultrasonic-arduino/](https://randomnerdtutorials.com/esp8266-nodemcu-hc-sr04-ultrasonic-arduino/){:target="_blank"}
+1. La documentation utilisée est celle ci : [https://randomnerdtutorials.com/esp8266-nodemcu-hc-sr04-ultrasonic-arduino/](https://randomnerdtutorials.com/esp8266-nodemcu-hc-sr04-ultrasonic-arduino/){:target="_blank"}
 
-Le câblage est le suivant :
+2. Le schéma est le suivant :
 
-Le code du sketch est le suivant :
+![schéma](resources/tp8.1-schema.jpg)
+
+{:style="counter-reset:none"}
+3. Le montage correspondant est :
+
+![montage](resources/tp8.1-montage.jpg)
+
+{:style="counter-reset:none"}
+4. Voici le code du sketch :
+
 ```c
 /*********
   Rui Santos
@@ -25,8 +34,8 @@ Le code du sketch est le suivant :
   copies or substantial portions of the Software.
 *********/
 
-#define ECHO_PIN D1
-#define TRIGGER_PIN D2
+#define TRIGGER_PIN D1
+#define ECHO_PIN D2
 
 //define sound velocity in cm/uS
 #define SOUND_VELOCITY 0.034
@@ -68,13 +77,21 @@ Ne pas oublier de changer la vitesse de communication en `baud` de la console s�
 
 La sortie de console est alors :
 
-![schema](resources/tp8-console.jpg)
+![schema](resources/tp8.1-console.jpg)
 
-## Feu
+## Indicateur de distance
 
-Le câblage est le suivant :
+1. Le schéma est le suivant :
 
-Le code du sketch est le suivant :
+![schéma](resources/tp8.2-schema.jpg)
+
+{:style="counter-reset:none"}
+2. Le montage correspondant est :
+
+![montage](resources/tp8.2-montage.jpg)
+
+{:style="counter-reset:none"}
+3. Voici le code du sketch :
 
 ```c
 ```

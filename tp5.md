@@ -1,5 +1,5 @@
 ---
-title: "TP 5 : Capteur de lumière"
+title: "TP 5 🔅 Capteur de lumière"
 nav_order: 25
 schema: true
 ---
@@ -9,9 +9,11 @@ schema: true
 {: .objectiv }
 Brancher le capteur de lumière et afficher sa valeur sur la console série.
 
-1. La résistance de la [LDR](https://en.wikipedia.org/wiki/Photoresistor){:target="_blank"} varie en fonction de la lumière : plus il fait sombre, plus sa résistance est élevée (> 1MΩ), moins il y a de courant qui passe, plus la tension aux bornes du composant est élevée. <br> Nous utiliserons un pont diviseur de tension afin de lire la tension aux bornes de la résistance via la broche `A0` de l'ESP et envoyer la valeur lue sur la console série.
+La résistance de la [LDR](composants.md#ldr) varie en fonction de la lumière : plus il fait sombre, plus sa résistance est élevée (> 1 MΩ), moins il y a de courant qui passe, plus la tension aux bornes du composant est élevée.
 
-2. Le schéma électronique est le suivant :
+![LDR / photorésistance](resources/photoresistor.jpg)
+
+1.  Nous construisons un pont diviseur de tension avec les résistances `R2` de 3.3 kΩ et la LDR afin de lire la tension à ses bornes via la broche `A0` de l'ESP. La valeur lue est affichée sur la console série. Le schéma électronique est le suivant :
 ![schema](resources/tp5-schema.jpg)
 
 3. Voici le câblage correspondant :
