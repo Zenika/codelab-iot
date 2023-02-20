@@ -47,7 +47,7 @@ void stop() {
 }
 
 #define SHORT_DURATION 100
-#define THRESHOLD 40 // ajuster le seuil en fonction des conditions lumineuses
+#define THRESHOLD 800 // ajuster le seuil en fonction des conditions lumineuses
 void wait_if_no_action(uint16_t duration) {
   Serial.print("Sensor values: ");
   for (uint8_t i = 0; i < (duration / SHORT_DURATION); i++) {

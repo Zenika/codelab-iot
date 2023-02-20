@@ -24,9 +24,11 @@ La disposition des PIN de l'ESP est disponible sur [la page des composants](comp
 
 1. Le capteur peut être directement enfiché verticalement sur la breadboard en branchant les PIN suivantes :
 - `VCC` : à l'alimentation, soit 5V
-- 'GND' : à la masse
+- `GND` : à la masse
 - `echo` : rélié à la pin `D1` de l'ESP
 - `trigger` : rélié à la pin `D2` de l'ESP
+
+![capteur](resources/tp8.1-capteur.jpg)
 
 [{{ site.code-spoiler }}](tp8_code.md#mesure-de-distance)
 

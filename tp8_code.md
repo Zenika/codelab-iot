@@ -80,6 +80,9 @@ La sortie de console est alors :
 
 ![schema](resources/tp8.1-console.jpg)
 
+----
+[⬅️ Retour à l'énoncé](tp8.md)
+
 ## Indicateur de distance
 
 1. Le schéma est le suivant :
