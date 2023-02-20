@@ -22,9 +22,8 @@ Installation de l'environnement Arduino IDE et écrire un _sketch_ pour faire cl
   ![preferences](resources/arduino-ide-preferences.jpg)
 4. Aller dans _Tools_ > _Board: .*_ > _Boards Manager..._
   ![menu](resources/arduino-ide-board-menu.jpg)
-5. Dans le champs de recherche en haut de la fenêtre, saisir `esp8266`, sélectionner le premier résultat puis cliquer sur le bouton _install_ (ℹ️ continuer sur [le TP 1](tp1.md) en attendant)
+5. Dans le champs de recherche en haut de la fenêtre, saisir `esp8266`, sélectionner le premier résultat puis cliquer sur le bouton _install_, il faut une version supérieure ou égale à `1.0.1`.
   ![install](resources/arduino-ide-board-install.jpg)
-6. Terminer en cliquant sur le bouton _close_
 
 {: .caution }
 ⚠️ Nous déclinons toute responsabilité en cas de mauvais branchement ou mauvaise manipulation.
