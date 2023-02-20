@@ -34,8 +34,8 @@ schema: true
   copies or substantial portions of the Software.
 *********/
 
-#define TRIGGER_PIN D1
-#define ECHO_PIN D2
+#define ECHO_PIN D1
+#define TRIGGER_PIN D2
 
 //define sound velocity in cm/uS
 #define SOUND_VELOCITY 0.034
