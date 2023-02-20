@@ -21,5 +21,10 @@ void loop() {
 }
 ```
 
+{: .tip }
+La valeur lue varie entre `0` et `1024`.
+
+![serie](resources/tp5-console.jpg)
+
 ----
 [⬅️ Retour à l'énoncé](tp5.md)

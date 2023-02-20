@@ -18,7 +18,7 @@ void loop() {
   double ldr = analogRead(A0);
   Serial.print("valeur : ");
   Serial.println(ldr);
-  if (ldr < 25) {  // 25 dépend de la luminosité ambiante, à ajuster en fonction des valeurs lues avec et sans ombre
+  if (ldr < 850) {  // 850 dépend de la luminosité ambiante, à ajuster en fonction des valeurs lues avec et sans ombre
     digitalWrite(D1, HIGH);
   } else {
     digitalWrite(D1, LOW);
