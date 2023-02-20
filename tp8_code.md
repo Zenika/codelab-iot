@@ -41,10 +41,11 @@ schema: true
 #define SOUND_VELOCITY 0.034
 
 long duration;
-float distanceCm;
+float distance;
 
 void setup() {
   Serial.begin(115200); // Starts the serial communication
+  Serial.flush();
   pinMode(TRIGGER_PIN, OUTPUT); // Sets the TRIGGER_PIN as an Output
   pinMode(ECHO_PIN, INPUT); // Sets the ECHO_PIN as an Input
 }
@@ -62,13 +63,13 @@ void loop() {
   duration = pulseIn(ECHO_PIN, HIGH);
 
   // Calculate the distance
-  distanceCm = duration * SOUND_VELOCITY/2;
+  distance = duration * SOUND_VELOCITY/2;
 
   // Prints the distance on the Serial Monitor
   Serial.print("Distance (cm): ");
-  Serial.println(distanceCm);
+  Serial.println(distance);
 
-  delay(1000);
+  delay(500);
 }
 ```
 
@@ -94,6 +95,87 @@ La sortie de console est alors :
 3. Voici le code du sketch :
 
 ```c
+/*********
+  Rui Santos
+  Complete project details at https://RandomNerdTutorials.com/esp8266-nodemcu-hc-sr04-ultrasonic-arduino/
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files.
+
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+*********/
+
+#define LED_RED D6
+#define LED_ORANGE D5
+#define LED_GREEN D0
+
+#define ECHO_PIN D1
+#define TRIGGER_PIN D2
+
+//define sound velocity in cm/uS
+#define SOUND_VELOCITY 0.034
+
+long duration;
+float distance;
+
+void setup() {
+  Serial.begin(115200); // Starts the serial communication
+  Serial.flush();
+  pinMode(TRIGGER_PIN, OUTPUT); // Sets the TRIGGER_PIN as an Output
+  pinMode(ECHO_PIN, INPUT); // Sets the ECHO_PIN as an Input
+  pinMode(LED_GREEN, OUTPUT);
+  pinMode(LED_ORANGE, OUTPUT);
+  pinMode(LED_RED, OUTPUT);
+}
+
+void loop() {
+  // Clears the TRIGGER_PIN
+  digitalWrite(TRIGGER_PIN, LOW);
+  delayMicroseconds(2);
+  // Sets the TRIGGER_PIN on HIGH state for 10 micro seconds
+  digitalWrite(TRIGGER_PIN, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(TRIGGER_PIN, LOW);
+
+  // Reads the ECHO_PIN, returns the sound wave travel time in microseconds
+  duration = pulseIn(ECHO_PIN, HIGH);
+
+  // Calculate the distance
+  distance = duration * SOUND_VELOCITY/2;
+
+  // Prints the distance on the Serial Monitor
+  Serial.print("Distance (cm): ");
+  Serial.println(distance);
+
+  if (distance >= 12) {
+    green();
+  } else if (distance < 12 && distance > 7) {
+    orange();
+  } else {
+    red();
+  }
+
+  delay(500);
+}
+
+void green() {
+  digitalWrite(LED_GREEN, HIGH);
+  digitalWrite(LED_ORANGE, LOW);
+  digitalWrite(LED_RED, LOW);
+}
+
+void orange() {
+  digitalWrite(LED_GREEN, LOW);
+  digitalWrite(LED_ORANGE, HIGH);
+  digitalWrite(LED_RED, LOW);
+}
+
+void red() {
+  digitalWrite(LED_GREEN, LOW);
+  digitalWrite(LED_ORANGE, LOW);
+  digitalWrite(LED_RED, HIGH);
+}
 ```
 
 ----

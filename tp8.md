@@ -31,10 +31,10 @@ La disposition des PIN de l'ESP est disponible sur [la page des composants](comp
 [{{ site.code-spoiler }}](tp8_code.md#mesure-de-distance)
 
 {:style="counter-reset:none"}
-2. Une fois la distance affichée, modifier le sketch afin d'allumer les différentes LED du feu en fonction de la distance en reprenant le câblage du TP précédent :
-- Vert 🟢 : >= 10 cm
-- Orange 🟠 : < 10 cm et > 5 cm
-- Rouge 🔴 : =< 5 cm
+2. Une fois la distance affichée, modifier le sketch afin d'allumer les différentes LED du feu en fonction de la distance en reprenant le câblage du TP précédent en implémentant les règles suivantes :
+- Vert 🟢 : >= 12 cm
+- Orange 🟠 : < 12 cm et > 7 cm
+- Rouge 🔴 : =< 7 cm
 
 [{{ site.code-spoiler }}](tp8_code.md#feu)
 
