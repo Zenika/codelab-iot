@@ -26,6 +26,10 @@ La résistance de la [LDR](composants.md#ldr) varie en fonction de la lumière :
 {:style="counter-reset:none"}
 4. L'API à utiliser pour mesurer la tension aux bornes de la photo-résistance est [`analogRead()`](https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/){:target="_blank"}.
 
+5. Une fois le code écrit et uploadé, n'oubliez pas d'afficher la console série pour voir les valeurs lues.
+
+![serie](resources/tp4-bouton.jpg)
+
 ----
 [{{ site.code-spoiler }}](tp5_code.md)
 
