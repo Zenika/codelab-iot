@@ -29,7 +29,7 @@ void loop() {
 
 {:style="counter-reset:none"}
 
-3. Uploader votre sketch dans l'ESP avec le bouton introduit au TP2
+3. Uploader votre sketch dans l'ESP avec le bouton *Upload* de l'interface arduino (introduit au TP2)
 
 4. Coté IDE Arduino, utiliser le moniteur série en cliquant sur le bouton suivant :
 ![bouton](resources/tp4-bouton.jpg)

@@ -33,7 +33,7 @@ void setup() {
 }
 
 // programme principal : une boucle infinie.
-// Le µC n'exécutera que cette fonction jusqu'au son débranchement électrique ou reboot.
+// Le µC n'exécutera que cette fonction jusqu'à son débranchement électrique ou reboot.
 void loop() {
   digitalWrite(LED, HIGH); // mise en tension de la sortie 18 à 5V
   delay(500);              // attente de 500 ms
