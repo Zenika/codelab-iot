@@ -63,11 +63,12 @@ void loop() {
   go();
   wait_if_no_object_detected(7000);      
 
+  caution();
+  delay(2000);
+
   stop();
   delay(5000);
 
-  caution();
-  delay(2000);
 }
 ```
 
