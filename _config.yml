@@ -93,8 +93,8 @@ callouts:
 
 code-spoiler: 🎁 Code réponse ici
 endpoint:
-  http: http://mockbin.org/bin/0c397f72-05d9-41fd-b3ed-97997aa4c533
-  https: https://mockbin.org/bin/0c397f72-05d9-41fd-b3ed-97997aa4c533
+  http: http://mockbin.org/bin/e0b19ccd-218c-4a9a-8041-dbd3af9ae8ed
+  https: https://mockbin.org/bin/e0b19ccd-218c-4a9a-8041-dbd3af9ae8ed
 
 # For copy button on code
 enable_copy_code_button: true
