@@ -1,31 +1,43 @@
 ---
-title: "TP 5 🌓 LED + LDR"
-nav_order: 26
+title: "TP 6 🚦 Pilotage d'un feu"
+nav_order: 27
 schema: true
 ---
 
-# TP 5 : Allumer la LED en fonction de la luminosité
+# TP 6 : Faire clignoter un feu tricolore 🚦
 
 {: .objectiv }
-Allumer la LED si une ombre est détectée.
+Faire clignoter le feu tricolore
 
-1. Le schéma électronique est un mélange des 2 TPs précédents :
-  - la LED + résistance sur le port `D1`
-  - pont de résistances sur `A0`
-![schema-tp5](resources/tp6-schema.jpg)
+![feu tricolore](resources/tp7-feu.jpg)
 
-2. Voici le câblage correspondant :
+Ce feu est imprimé en 3D en PLA, voici les fichiers des modèles :
+ - porte leds : [vue 3d](https://github.com/Zenika/codelab-iot/blob/main/resources/3d-feu.stl){:target="_blank"}, [stl](resources/3d-feu.stl){:target="_blank"}
+ - base : [vue 3d](https://github.com/Zenika/codelab-iot/blob/main/resources/3d-base.stl){:target="_blank"}, [stl](resources/3d-base.stl){:target="_blank"}
+
+1. Ecrire un sketch implémentant le cycle de changement d'état des leds suivant :
+ - Vert 🟢 : 7 secondes
+ - Orange 🟠 : 2 secondes
+ - Rouge 🔴 : 5 secondes
+
+2. Comme les boutons pour déclencher une traversée d'un piéton ou les capteurs magnétiques sous la chaussée, utiliser le capteur de lumière du TP précédent pour accélérer le passage au rouge du feu. Lors de l'activation du capteur, le feu devra passer au orange puis continuer son cycle normal.
+
+{: .tip }
+N'hésitez pas à séparer le contrôle de chaque led dans des méthodes
+
+{:style="counter-reset:none"}
+3. Le schéma électronique reprend celui du TP précédent avec 2 LEDs en plus :
+![schema](resources/tp7-schema.jpg)
+
+4. Voici le câblage correspondant :
 
 {: .caution }
 ⚠️ Avant toutes manipulations de composants, il faut **débrancher** le câble USB.
 
-![montage-tp5](resources/tp6-montage.jpg)
-
-{:style="counter-reset:none"}
-3. Coté code, les instructions de contrôle d'exécution habituelles sont disponibles : `if`, `then`, `else`...
+![montage](resources/tp7-montage.jpg)
 
 ----
 [{{ site.code-spoiler }}](tp6_code.md)
 
 ----
-[⬅️ TP 4](tp5.md) :: [TP 6 ➡️](tp7.md)
+[⬅️ TP 5](tp5.md) :: [TP 7 ➡️](tp7.md)

@@ -32,12 +32,12 @@ Découvrir la programmation sur ESP en créant un objet connecté.
 
 ## 📝 Codelab
 
-- [TP 1 🚀 : Installation de l'IDE & Blink World](tp2.md)
-- [TP 2 💡 : Branchement d'une LED](tp3.md)
-- [TP 3 ⚙️ : Communication série](tp4.md)
-- [TP 4 🔅 : Capteur de lumière](tp5.md)
-- [TP 5 🌓 : LED + LDR](tp6.md)
-- [TP 6 🚦 : Pilotage d'un feu](tp7.md)
-- [TP 7 🦇 : Capteur de distance](tp8.md)
-- [TP 8 📡 : Wifi](tp9.md)
-- [TP 9 📟 : Endpoint HTTP(s)](tp10.md)
+- [TP 1 🚀 : Installation de l'IDE & Blink World](tp1.md)
+- [TP 2 💡 : Branchement d'une LED](tp2.md)
+- [TP 3 ⚙️ : Communication série](tp3.md)
+- [TP 4 🔅 : Capteur de lumière](tp4.md)
+- [TP 5 🌓 : LED + LDR](tp5.md)
+- [TP 6 🚦 : Pilotage d'un feu](tp6.md)
+- [TP 7 🦇 : Capteur de distance](tp7.md)
+- [TP 8 📡 : Wifi](tp8.md)
+- [TP 9 📟 : Endpoint HTTP(s)](tp9.md)
