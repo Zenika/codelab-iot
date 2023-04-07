@@ -1,30 +1,31 @@
 ---
-title: "Réponse : Capteur de lumière"
+title: "Réponse : LED + LDR"
 nav_exclude: true
 schema: true
 ---
 
-# Réponse : Capteur de lumière
+# Réponse : LED + LDR
 
 ```c
 void setup() {
   Serial.begin(9600);
   Serial.flush();
   pinMode(A0, INPUT);
+  pinMode(D1, OUTPUT);
 }
 
 void loop() {
   double ldr = analogRead(A0);
   Serial.print("valeur : ");
   Serial.println(ldr);
+  if (ldr < 850) {  // 850 dépend de la luminosité ambiante, à ajuster en fonction des valeurs lues avec et sans ombre
+    digitalWrite(D1, HIGH);
+  } else {
+    digitalWrite(D1, LOW);
+  }
   delay(100);
 }
 ```
-
-{: .tip }
-La valeur lue varie entre `0` et `1024`.
-
-![serie](resources/tp5-console.jpg)
 
 ----
 [⬅️ Retour à l'énoncé](tp5.md)

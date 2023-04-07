@@ -1,43 +1,44 @@
 ---
-title: "TP 7 🚦 Pilotage d'un feu"
-nav_order: 27
+title: "TP 7 🦇 Capteur distance"
+nav_order: 28
 schema: true
 ---
 
-# TP 7 : Faire clignoter un feu tricolore 🚦
+# TP 7 : Intégrer un capteur de distance 🦇
 
 {: .objectiv }
-Faire clignoter le feu tricolore
+Ecrire un sketch affichant en console toute les secondes la distance mesurée par le capteur avec un objet.
 
-![feu tricolore](resources/tp7-feu.jpg)
+Le capteur de distance que nous utilisons est un modèle [HC-SR04](composants.md##capteur-de-distance). Ce type de capteur est utilisé dans les pare-chocs des voitures pour détecter la présence d'obstacles lors des manoeuvres.
 
-Ce feu est imprimé en 3D en PLA, voici les fichiers des modèles :
- - porte leds : [vue 3d](https://github.com/Zenika/codelab-iot/blob/main/resources/3d-feu.stl){:target="_blank"}, [stl](resources/3d-feu.stl){:target="_blank"}
- - base : [vue 3d](https://github.com/Zenika/codelab-iot/blob/main/resources/3d-base.stl){:target="_blank"}, [stl](resources/3d-base.stl){:target="_blank"}
+![HC-SR04](resources/HC-SR04.jpg)
 
-1. Ecrire un sketch implémentant le cycle de changement d'état des leds suivant :
- - Vert 🟢 : 7 secondes
- - Orange 🟠 : 2 secondes
- - Rouge 🔴 : 5 secondes
+Pour intégrer ce capteur dans notre projet, il faut rechercher de la documentation et des exemples de montages avec votre moteur de recherche préféré. Il y a beaucoup de documentation disponible pour les Arduinos, moins sur les ESP8266.
 
-2. Comme les boutons pour déclencher une traversée d'un piéton ou les capteurs magnétiques sous la chaussée, utiliser le capteur de lumière du TP précédent pour accélérer le passage au rouge du feu. Lors de l'activation du capteur, le feu devra passer au orange puis continuer son cycle normal.
+Les Arduinos sont une autre famille de micro-controlleur très utilisée dans le monde du DIY. Le code que nous écrivons pour notre ESP8266 est presque compatible avec les Arduinos, la différence réside dans le nom des PIN utilisés. Par conséquent, si vous ne trouvez pas de documentation directement pour ESP8266, il faut commencer par chercher des example pour Arduinos puis les transposer.
+La disposition des PIN de l'ESP est disponible sur [la page des composants](composants.md#micro-contrôleur).
 
-{: .tip }
-N'hésitez pas à séparer le contrôle de chaque led dans des méthodes
-
-{:style="counter-reset:none"}
-3. Le schéma électronique reprend celui du TP précédent avec 2 LEDs en plus :
-![schema](resources/tp7-schema.jpg)
-
-4. Voici le câblage correspondant :
 
 {: .caution }
 ⚠️ Avant toutes manipulations de composants, il faut **débrancher** le câble USB.
 
-![montage](resources/tp7-montage.jpg)
+1. Le capteur peut être directement enfiché verticalement sur la breadboard en branchant les PIN suivantes :
+- `VCC` : à l'alimentation, soit 5V
+- `GND` : à la masse
+- `echo` : rélié à la pin `D1` de l'ESP
+- `trigger` : rélié à la pin `D2` de l'ESP
 
-----
-[{{ site.code-spoiler }}](tp7_code.md)
+![capteur](resources/tp8.1-capteur.jpg)
+
+[{{ site.code-spoiler }}](tp7_code.md#mesure-de-distance)
+
+{:style="counter-reset:none"}
+2. Une fois la distance affichée, modifier le sketch afin d'allumer les différentes LED du feu en fonction de la distance en reprenant le câblage du TP précédent en implémentant les règles suivantes :
+- Vert 🟢 : >= 12 cm
+- Orange 🟠 : < 12 cm et > 7 cm
+- Rouge 🔴 : =< 7 cm
+
+[{{ site.code-spoiler }}](tp7_code.md#indicateur-de-distance)
 
 ----
 [⬅️ TP 6](tp6.md) :: [TP 8 ➡️](tp8.md)
