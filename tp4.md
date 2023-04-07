@@ -1,10 +1,10 @@
 ---
-title: "TP 4 ⚙️ Communication série"
+title: "TP 3 ⚙️ Communication série"
 nav_order: 24
 schema: true
 ---
 
-# TP 4 : Communication série
+# TP 3 : Communication série
 
 {: .objectiv }
 Afficher un message de debug sur la console série
@@ -38,4 +38,4 @@ void loop() {
 ![console](resources/tp4-serial.jpg)
 
 ----
-[⬅️ TP 3](tp3.md) :: [TP 5 ➡️](tp5.md)
+[⬅️ TP 2](tp3.md) :: [TP 4 ➡️](tp5.md)

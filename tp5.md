@@ -1,10 +1,10 @@
 ---
-title: "TP 5 🔅 Capteur de lumière"
+title: "TP 4 🔅 Capteur de lumière"
 nav_order: 25
 schema: true
 ---
 
-# TP 5 : Capteur de lumière
+# TP 4 : Capteur de lumière
 
 {: .objectiv }
 Brancher le capteur de lumière et afficher sa valeur sur la console série.
@@ -34,4 +34,4 @@ La résistance de la [LDR](composants.md#ldr) varie en fonction de la lumière :
 [{{ site.code-spoiler }}](tp5_code.md)
 
 ----
-[⬅️ TP 4](tp4.md) :: [TP 6 ➡️](tp6.md)
+[⬅️ TP 3](tp4.md) :: [TP 5 ➡️](tp6.md)

@@ -1,10 +1,10 @@
 ---
-title: "TP 7 🚦 Pilotage d'un feu"
+title: "TP 6 🚦 Pilotage d'un feu"
 nav_order: 27
 schema: true
 ---
 
-# TP 7 : Faire clignoter un feu tricolore 🚦
+# TP 6 : Faire clignoter un feu tricolore 🚦
 
 {: .objectiv }
 Faire clignoter le feu tricolore
@@ -40,4 +40,4 @@ N'hésitez pas à séparer le contrôle de chaque led dans des méthodes
 [{{ site.code-spoiler }}](tp7_code.md)
 
 ----
-[⬅️ TP 6](tp6.md) :: [TP 8 ➡️](tp8.md)
+[⬅️ TP 5](tp6.md) :: [TP 7 ➡️](tp8.md)

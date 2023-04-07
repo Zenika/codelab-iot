@@ -1,10 +1,10 @@
 ---
-title: "TP 3 : Code réponse"
+title: "TP 2 : Code réponse"
 nav_exclude: true
 schema: true
 ---
 
-# TP 3 : Code
+# TP 2 : Code
 
 ```c
 void setup() {

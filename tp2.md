@@ -1,10 +1,10 @@
 ---
-title: "TP 2 🚀 Blink World"
+title: "TP 1 🚀 Blink World"
 nav_order: 22
 schema: true
 ---
 
-# TP 2 : Utilisation de l'IDE & Blink World
+# TP 1 : Utilisation de l'IDE & Blink World
 
 {: .objectiv }
 Installation de l'environnement Arduino IDE et écrire un _sketch_ pour faire clignoter la led interne.
@@ -54,4 +54,4 @@ En cas d'erreur d'upload, consulter [la page d'aide des problèmes fréquents](t
 7. Admirer la led clignoter 🎉 ![clignote](resources/tp2-led-interne-clignote.gif)
 
 ----
-[⬅️ TP 1](tp1.md) :: [TP 3 ➡️](tp3.md)
+[⬅️ Index](index.md) :: [TP 2 ➡️](tp3.md)

@@ -1,10 +1,10 @@
 ---
-title: "TP 8 🦇 Capteur distance"
+title: "TP 7 🦇 Capteur distance"
 nav_order: 28
 schema: true
 ---
 
-# TP 8 : Intégrer un capteur de distance 🦇
+# TP 7 : Intégrer un capteur de distance 🦇
 
 {: .objectiv }
 Ecrire un sketch affichant en console toute les secondes la distance mesurée par le capteur avec un objet.
@@ -41,4 +41,4 @@ La disposition des PIN de l'ESP est disponible sur [la page des composants](comp
 [{{ site.code-spoiler }}](tp8_code.md#feu)
 
 ----
-[⬅️ TP 7](tp7.md) :: [TP 9 ➡️](tp9.md)
+[⬅️ TP 6](tp7.md) :: [TP 8 ➡️](tp9.md)

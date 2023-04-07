@@ -1,10 +1,10 @@
 ---
-title: "TP 6 🌓 LED + LDR"
+title: "TP 5 🌓 LED + LDR"
 nav_order: 26
 schema: true
 ---
 
-# TP 6 : Allumer la LED en fonction de la luminosité
+# TP 5 : Allumer la LED en fonction de la luminosité
 
 {: .objectiv }
 Allumer la LED si une ombre est détectée.
@@ -28,4 +28,4 @@ Allumer la LED si une ombre est détectée.
 [{{ site.code-spoiler }}](tp6_code.md)
 
 ----
-[⬅️ TP 5](tp5.md) :: [TP 7 ➡️](tp7.md)
+[⬅️ TP 4](tp5.md) :: [TP 6 ➡️](tp7.md)

@@ -1,10 +1,10 @@
 ---
-title: "TP 9 📡 Wifi"
+title: "TP 8 📡 Wifi"
 nav_order: 29
 schema: true
 ---
 
-# TP 9 : Connecter l'ESP au Wifi
+# TP 8 : Connecter l'ESP au Wifi
 
 {: .objectiv }
 Configurer le Wifi sur l'ESP puis afficher son adresse IP.
@@ -24,4 +24,4 @@ Il n'est pas nécessaire de modifier le câblage des composants.
 [{{ site.code-spoiler }}](tp9_code.md)
 
 ----
-[⬅️ TP 8](tp8.md) :: [TP 10 ➡️](tp10.md)
+[⬅️ TP 7](tp8.md) :: [TP 9 ➡️](tp10.md)
