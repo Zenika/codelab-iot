@@ -38,7 +38,7 @@ La disposition des PIN de l'ESP est disponible sur [la page des composants](comp
 - Orange 🟠 : < 12 cm et > 7 cm
 - Rouge 🔴 : =< 7 cm
 
-[{{ site.code-spoiler }}](tp7_code.md#feu)
+[{{ site.code-spoiler }}](tp7_code.md#indicateur-de-distance)
 
 ----
 [⬅️ TP 6](tp6.md) :: [TP 8 ➡️](tp8.md)
